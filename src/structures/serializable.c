@@ -208,6 +208,13 @@ _read_json_string(char *str, size_t len, int *outPos)
         char c = str[i];
         if (c == '\"' && !isEscaped)
             break;
+
+        if (c == '\\' && !isEscaped)
+        {
+            isEscaped = 1;
+            continue;
+        }
+        isEscaped = 0;
         str_append_char(s, c);
     }
     *outPos = i+1;
