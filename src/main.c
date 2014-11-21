@@ -3,6 +3,7 @@
 #include <string.h>
 
 #include "structures/structures.h"
+#include "sgbd/binary_file.h"
 
 int
 main(int argc, const char * argv[])

@@ -7,9 +7,9 @@
 #include <string.h>
 
 typedef struct file_manager {
-	char *f_name;
-	FILE *f_pointer;
-	long f_size;
+    char *f_name;
+    FILE *f_pointer;
+    long f_size;
 } file_manager;
 
 void create_file(file_manager *fm);

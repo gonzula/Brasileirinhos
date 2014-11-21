@@ -4,8 +4,14 @@ CFLAGS= -std=c11 -Wall
 
 all: brasileirinhos.app
 
-brasileirinhos.app: list.o refcnt.o str.o htable.o serializable.o main.o
-	$(CC) $(CFLAGS) list.o refcnt.o str.o htable.o serializable.o main.o -o brasileirinhos.app
+brasileirinhos.app: list.o refcnt.o str.o htable.o serializable.o main.o binary_file.o file_manager.o
+	$(CC) $(CFLAGS) list.o refcnt.o str.o htable.o serializable.o main.o binary_file.o file_manager.o -o brasileirinhos.app
+
+binary_file.o: src/sgbd/binary_file.c
+	$(CC) $(CFLAGS) -c src/sgbd/binary_file.c
+
+file_manager.o: src/sgbd/file_manager.c
+	$(CC) $(CFLAGS) -c src/sgbd/file_manager.c
 
 list.o: src/structures/list.c
 	$(CC) $(CFLAGS) -c src/structures/list.c
