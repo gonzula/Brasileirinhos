@@ -1,20 +1,21 @@
 
 #include "file_manager.h"
 
-void set_file_size(file_manager *fm) {
-    FILE *fp = fopen((const char *)fm->f_name, "r");
+void set_file_size(file_manager *fm, FILE *fp) {
+    rewind(fp);
     fseek(fp, 0L, SEEK_END);
     fm->f_size = ftell(fp);
     rewind(fp);
-    fclose(fp);
 }
 
 void create_file(file_manager *fm) {
-    fm->f_pointer = fopen((const char *)fm->f_name, "rb");
-    if(!fm->f_pointer) fm->f_pointer = fopen((const char *)fm->f_name, "wb");
-    fclose(fm->f_pointer);
+    FILE *fp = NULL;
+    fp = fopen((const char *)fm->f_name, "r");
+    if(!fp) fp = fopen((const char *)fm->f_name, "w");
 
-    set_file_size(fm);
+    set_file_size(fm, fp);
+
+    fclose(fp);
 }
 
 file_manager *construct_file_manager(char *f_name) {
@@ -32,44 +33,31 @@ void destroy_file_manager(file_manager *fm) {
     if(fm != NULL) free(fm);
 }
 
-int open_file(file_manager *fm, int readonly, int binary, int overwrite) {
-    if(fm->f_name == NULL) return 1;
-    set_file_size(fm);
+FILE *open_file(file_manager *fm, int readonly, int binary, int overwrite) {
+    if(fm->f_name == NULL) return NULL;
 
-    if(overwrite) fm->f_pointer = fopen((const char *)fm->f_name, binary ? "wb" : "w");
+    FILE *fp = NULL;
+
+    if(overwrite) fp = fopen((const char *)fm->f_name, binary ? "wb" : "w");
     else
     {
-        if(readonly) fm->f_pointer = fopen((const char *)fm->f_name, binary ? "rb" : "r");
-        else fm->f_pointer = fopen((const char *)fm->f_name, binary ? "rb+" : "r+");
+        if(readonly) fp = fopen((const char *)fm->f_name, binary ? "rb" : "r");
+        else fp = fopen((const char *)fm->f_name, binary ? "rb+" : "r+");
     }
 
-    return 0;
+    set_file_size(fm, fp);
+
+    return fp;
 }
 
-int close_file(file_manager *fm) {
-    set_file_size(fm);
-    return fclose(fm->f_pointer); //if successful, returns 0
+int close_file(file_manager *fm, FILE *fp) {
+    set_file_size(fm, fp);
+    return fclose(fp); //if successful, returns 0
 }
 
 int seek(file_manager *fm, long offset) {
-    if(!fm->f_pointer) return 1;
+    FILE *fp = open_file(fm, 1, 0, 0);
 
-    fseek(fm->f_pointer, offset, SEEK_SET);
-    return 0;
-}
-
-int seek_back(file_manager *fm, long minus) {
-    if(!fm->f_pointer) return 1;
-    if(minus > 0) minus *= -1;
-
-    fseek(fm->f_pointer, minus, SEEK_CUR);
-    return 0;
-}
-
-int seek_foward(file_manager *fm, long plus) {
-    if(!fm->f_pointer) return 1;
-    if(plus < 0) plus *= -1;
-
-    fseek(fm->f_pointer, plus, SEEK_CUR);
-    return 0;
+    fseek(fp, offset, SEEK_SET);
+    return close_file(fm, fp);
 }

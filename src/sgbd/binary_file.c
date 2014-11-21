@@ -2,30 +2,31 @@
 #include "binary_file.h"
 
 int write_bytes(file_manager *fm, char *bytes) {
-    if(open_file(fm, 0, 1, 1)) return 1;
+    FILE *fp = open_file(fm, 0, 0, 1);
+    if(!fp) return 1;
     seek(fm, 0L);
 
-    fwrite((unsigned char *)bytes, sizeof(unsigned char), strlen(bytes)+1, fm->f_pointer);
+    fwrite((unsigned char *)bytes, sizeof(unsigned char), strlen(bytes)+1, fp);
 
-    if(close_file(fm)) return 1;
-
-    return 0;
+    return close_file(fm, fp);
 }
 
 char *read_all_bytes(file_manager *fm) {
 
-    if(open_file(fm, 1, 1, 0)) return NULL;
+    FILE *fp = open_file(fm, 1, 0, 0);
+    if(!fp) return NULL;
     seek(fm, 0L);
 
-    char *buffer = (char *) malloc(sizeof(char)*(1 + fm->f_size));
+    char *buffer = (char *) malloc(sizeof(char)*(fm->f_size+1));
     int i = 0;
     unsigned char byte;
-    while(i < fm->f_size) {
-        fread(&byte, sizeof(unsigned char), 1, fm->f_pointer);
+    while(!feof(fp)) {
+        fread(&byte, sizeof(unsigned char), 1, fp);
         buffer[i++] = (char) byte;
     }
-    buffer[i] = 0;
-    if(close_file(fm)) return NULL;
+
+    buffer[i-1] = '\0';
+    if(close_file(fm, fp)) return NULL;
 
     return buffer;
 }
