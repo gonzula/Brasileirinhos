@@ -124,7 +124,6 @@ main(int argc, const char * argv[])
             release(j);
         }
     }
-
     {
         Rodada *r = alloc(sizeof(Rodada), rodada_release);
         list_append(champ->rodadas, r);
@@ -140,6 +139,8 @@ main(int argc, const char * argv[])
             j->time1 = time1;
             j->time2 = time2;
             list_append(r->jogos, j);
+            retain(j->time1);
+            retain(j->time2);
             release(j);
         }
         {
@@ -150,6 +151,8 @@ main(int argc, const char * argv[])
             j->time1 = time2;
             j->time2 = time3;
             list_append(r->jogos, j);
+            retain(j->time1);
+            retain(j->time2);
             release(j);
         }
         {
@@ -159,6 +162,8 @@ main(int argc, const char * argv[])
             j->gols2 = 0;
             j->time1 = time3;
             j->time2 = time1;
+            retain(j->time1);
+            retain(j->time2);
             list_append(r->jogos, j);
             release(j);
         }
@@ -209,7 +214,7 @@ main(int argc, const char * argv[])
         }
     }
 
-    campeonato_write_to_file("/Users/gonzo/Desktop/champ.json", champ);
+    campeonato_write_to_file("champ.json", champ);
 
 
     release(champ);

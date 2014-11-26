@@ -72,6 +72,7 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
             Serializable *jogadores_s = serializable_create(jogadores_l, list_t);
             htable_set(time_ht, "jogadores", jogadores_s);
             release(jogadores_l);
+            release(jogadores_s);
             LIST_LOOP(_time->jogadores)
             {
                 Jogador *jogador = node->object;
@@ -185,7 +186,10 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
         }
     }
 
+
+
     String *json = serializable_write_json(campeonato_s);
+    release(campeonato_s);
 
     file_manager *fm = construct_file_manager(filename);
     write_bytes(fm, json->string);
