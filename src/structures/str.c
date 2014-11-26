@@ -5,9 +5,11 @@
 
 #include "str.h"
 #include "refcnt.h"
+#include "structures.h"
 
 
 #define BUFFER_SIZE (1 << 8)
+
 
 void str_free(void *obj);
 
@@ -35,9 +37,13 @@ String * str_create(const char * original)
 String * str_escape_cstring(char * string)
 {
     String *esc = str_init();
+    unsigned char utfSeq[4];
+    utfSeq[3] = 0;
+    int isBuildingSeq = 0;
+    int seqSize = 0;
     for (int i = 0; string[i]; i++)
     {
-        char c = string[i];
+        unsigned char c = string[i];
         if (c <= '~')
         {
             switch (c)
@@ -71,6 +77,87 @@ String * str_escape_cstring(char * string)
                     break;
             }
         }
+        else
+        {
+            if (!isBuildingSeq)
+            {
+                bin8 b;
+                b.c = c;
+                seqSize = (b.b7?1:0) + (b.b6?1:0) + (b.b5?1:0);
+                utfSeq[0] =
+                utfSeq[1] =
+                utfSeq[2] =
+                utfSeq[3] = 0;
+            }
+            utfSeq[isBuildingSeq] = c;
+            isBuildingSeq += 1;
+            if (isBuildingSeq >= seqSize)
+            {
+                bin32 b;
+                b.u = 0;
+                if (seqSize == 1)
+                {
+                    bin8 c1;
+                    c1.uc = utfSeq[0];
+                    b.b0 = c1.b0;
+                    b.b1 = c1.b1;
+                    b.b2 = c1.b2;
+                    b.b3 = c1.b3;
+                    b.b4 = c1.b4;
+                    b.b5 = c1.b5;
+                    b.b6 = c1.b6;
+                }
+                else
+                if(seqSize == 2)
+                {
+                    bin8 c1, c2;
+                    c1.uc = utfSeq[0];
+                    c2.uc = utfSeq[1];
+
+                    b.b0 = c2.b0;
+                    b.b1 = c2.b1;
+                    b.b2 = c2.b2;
+                    b.b3 = c2.b3;
+                    b.b4 = c2.b4;
+                    b.b5 = c2.b5;
+                    b.b6 = c1.b0;
+                    b.b7 = c1.b1;
+
+                    b.b8 = c1.b2;
+                    b.b9 = c1.b3;
+                    b.b10 = c1.b4;
+                }
+                else if(seqSize == 3)
+                {
+                    bin8 c0, c1, c2;
+                    c2.uc = utfSeq[0];
+                    c1.uc = utfSeq[1];
+                    c0.uc = utfSeq[2];
+
+                    b.b0 = c0.b0;
+                    b.b1 = c0.b1;
+                    b.b2 = c0.b2;
+                    b.b3 = c0.b3;
+                    b.b4 = c0.b4;
+                    b.b5 = c0.b5;
+                    b.b6 = c1.b0;
+                    b.b7 = c1.b1;
+
+                    b.b8 = c1.b2;
+                    b.b9 = c1.b3;
+                    b.b10 = c1.b4;
+                    b.b11 = c1.b5;
+                    b.b12 = c2.b0;
+                    b.b13 = c2.b1;
+                    b.b14 = c2.b2;
+                    b.b15 = c2.b3;
+                }
+                char unicode[20];
+                sprintf(unicode, "\\u%04x", b.u);
+                str_append(esc, unicode);
+                isBuildingSeq = 0;
+            }
+        }
     }
     return esc;
 }
@@ -94,7 +181,7 @@ void str_append(String *str, const char * toAppend)
     str->len += appLen;
 }
 
-void str_append_char(String *str, const char c)
+void str_append_char(String *str, const unsigned char c)
 {
     size_t appLen = 1;
     if (str->len + appLen + 1 > str->bufferSize)

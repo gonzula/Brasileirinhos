@@ -3,7 +3,10 @@
 
 typedef struct
 {
-    char * string;
+    union {
+        char *string;
+        unsigned char *ustring;
+    };
     size_t len;
     size_t bufferSize;
 } String;
@@ -13,7 +16,7 @@ String * str_create(const char * original);
 String * str_escape_cstring(char * string);
 String * str_escape(String *str);
 void str_append(String *str, const char * toAppend);
-void str_append_char(String *str, const char c);
+void str_append_char(String *str, const unsigned char c);
 
 
 #endif //__str_H_

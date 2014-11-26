@@ -7,6 +7,7 @@
 
 #define isblank(c) (strchr(" \n\r", c) != NULL)
 #define isprimitive(c) (strchr("-0123456789eEfalsetruenull.", c) != NULL)
+#define ishex(c) (strchr("0123456789abcdefABCDEF", c) != NULL)
 #define streq(a, b) (strcmp(a,b)==0)
 
 void serializable_free(void *sobj);
@@ -197,21 +198,130 @@ _read_json_primitive (char *str, size_t len, int *outPos)
     return ser;
 }
 
+
+
 Serializable *
 _read_json_string(char *str, size_t len, int *outPos)
 {
     String *s = str_init();
     int i;
     int isEscaped = 0;
+    int isReadingUnicode = 0;
+    char hex[5];
+    hex[4] = 0;
     for (i = 0; i < len; i++)
     {
         char c = str[i];
+        if (isReadingUnicode)
+        {
+            if (ishex(c) && isReadingUnicode < 5)
+            {
+                hex[isReadingUnicode-1] = c;
+                isReadingUnicode++;
+                continue;
+            }
+            else
+            {
+                unsigned int val = strtol(hex, NULL, 16);
+                isReadingUnicode = 0;
+                if (val <= 0x007F)
+                {
+                    str_append_char(s, val);
+                }
+                else if (val <= 0x07ff)
+                {
+                    bin8 b1, b2;
+                    bin32 v;
+                    v.u = val;
+                    b2.b0 = v.b0;
+                    b2.b1 = v.b1;
+                    b2.b2 = v.b2;
+                    b2.b3 = v.b3;
+                    b2.b4 = v.b4;
+                    b2.b5 = v.b5;
+                    b2.b6 = 0;
+                    b2.b7 = 1;
+
+                    b1.b0 = v.b6;
+                    b1.b1 = v.b7;
+                    b1.b2 = v.b8;
+                    b1.b3 = v.b9;
+                    b1.b4 = v.b10;
+                    b1.b5 = 0;
+                    b1.b6 =
+                    b1.b7 = 1;
+                    str_append_char(s, b1.uc);
+                    str_append_char(s, b2.uc);
+                }
+                else if (0xFFFF)
+                {
+                    bin8 b1, b2, b3;
+                    bin32 v;
+                    v.u = val;
+
+                    b3.b0 = v.b0;
+                    b3.b1 = v.b1;
+                    b3.b2 = v.b2;
+                    b3.b3 = v.b3;
+                    b3.b4 = v.b4;
+                    b3.b5 = v.b5;
+                    b3.b6 = 0;
+                    b3.b7 = 1;
+
+                    b2.b0 = v.b6;
+                    b2.b1 = v.b7;
+                    b2.b2 = v.b8;
+                    b2.b3 = v.b9;
+                    b2.b4 = v.b10;
+                    b2.b5 = v.b11;
+                    b2.b6 = 0;
+                    b2.b7 = 1;
+
+                    b1.b0 = v.b12;
+                    b1.b1 = v.b13;
+                    b1.b2 = v.b14;
+                    b1.b3 = v.b15;
+                    b1.b4 = 0;
+                    b1.b5 =
+                    b1.b6 =
+                    b1.b7 = 1;
+
+                    str_append_char(s, b1.uc);
+                    str_append_char(s, b2.uc);
+                    str_append_char(s, b3.uc);
+                }
+            }
+        }
         if (c == '\"' && !isEscaped)
+        {
             break;
+        }
 
         if (c == '\\' && !isEscaped)
         {
             isEscaped = 1;
+            continue;
+        }
+        if (isEscaped)
+        {
+            if (c == 'u')
+            {
+                isEscaped = 0;
+                isReadingUnicode = 1;
+                continue;
+            }
+            switch (c)
+            {
+                case 'n': str_append_char(s, '\n');break;
+                case 'r': str_append_char(s, '\r');break;
+                case 'b': str_append_char(s, '\b');break;
+                case 'f': str_append_char(s, '\f');break;
+                case 't': str_append_char(s, '\t');break;
+                case '\\':
+                case '/':
+                case '\"': str_append_char(s, c);break;
+            }
+            isEscaped = 0;
             continue;
         }
         isEscaped = 0;
