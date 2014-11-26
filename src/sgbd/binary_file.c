@@ -6,7 +6,7 @@ int write_bytes(file_manager *fm, char *bytes) {
     if(!fp) return 1;
     seek(fm, 0L);
 
-    fwrite((unsigned char *)bytes, sizeof(unsigned char), strlen(bytes)+1, fp);
+    fwrite((unsigned char *)bytes, sizeof(unsigned char), strlen(bytes), fp);
 
     return close_file(fm, fp);
 }

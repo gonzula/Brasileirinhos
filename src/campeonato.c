@@ -195,6 +195,44 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
 
 }
 
+void
+champ_release(void *champ)
+{
+    Campeonato *c = champ;
+    release(c->times);
+    release(c->rodadas);
+}
+
+void
+jogador_release(void *jogador)
+{
+    Jogador *j = jogador;
+    free(j->nome);
+}
+
+void
+time_release(void *_time)
+{
+    Time *t = (Time *)_time;
+    free(t->nome);
+    release(t->jogadores);
+}
+
+void
+rodada_release(void *rodada)
+{
+    Rodada *r = (Rodada *)rodada;
+    release(r->jogos);
+}
+
+void
+jogo_release(void *jogo)
+{
+    Jogo *j = (Jogo *)jogo;
+    release(j->time1);
+    release(j->time2);
+}
+
 
 Campeonato *
 campeonato_read_from_file(char *filename)
