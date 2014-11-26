@@ -1,0 +1,120 @@
+{
+    "rodadas": [
+        {
+            "ja foi rodada": true,
+            "jogos": [
+                {
+                    "gols 1": 3,
+                    "gols 2": 3,
+                    "ja foi jogo": true,
+                    "time 1": "Palmeiras",
+                    "time 2": "Corinthians"
+                },
+                {
+                    "gols 1": 1,
+                    "gols 2": 3,
+                    "ja foi jogo": true,
+                    "time 1": "Corinthians",
+                    "time 2": "Sao Paulo"
+                },
+                {
+                    "gols 1": 0,
+                    "gols 2": 0,
+                    "ja foi jogo": true,
+                    "time 1": "Sao Paulo",
+                    "time 2": "Palmeiras"
+                }
+            ],
+            "numero": 1
+        },
+        {
+            "ja foi rodada": false,
+            "jogos": [
+                {
+                    "gols 1": 3,
+                    "gols 2": 3,
+                    "ja foi jogo": false,
+                    "time 1": "Palmeiras",
+                    "time 2": "Corinthians"
+                },
+                {
+                    "gols 1": 1,
+                    "gols 2": 3,
+                    "ja foi jogo": false,
+                    "time 1": "Corinthians",
+                    "time 2": "Sao Paulo"
+                },
+                {
+                    "gols 1": 0,
+                    "gols 2": 0,
+                    "ja foi jogo": false,
+                    "time 1": "Sao Paulo",
+                    "time 2": "Palmeiras"
+                }
+            ],
+            "numero": 2
+        }
+    ],
+    "times": [
+        {
+            "der": 10,
+            "emp": 10,
+            "jogadores": [
+                {
+                    "gols": 100,
+                    "nome": "Gonzo",
+                    "numero": 69
+                },
+                {
+                    "gols": 200,
+                    "nome": "Gracinha Vira Homem",
+                    "numero": 24
+                }
+            ],
+            "nome": "Palmeiras",
+            "pontos": 10,
+            "saldo": 10,
+            "vit": 10
+        },
+        {
+            "der": 5,
+            "emp": 4,
+            "jogadores": [
+                {
+                    "gols": 100,
+                    "nome": "Toru Seu Troxa",
+                    "numero": 69
+                },
+                {
+                    "gols": 200,
+                    "nome": "Abominavel",
+                    "numero": 24
+                }
+            ],
+            "nome": "Corinthians",
+            "pontos": 1,
+            "saldo": 2,
+            "vit": 3
+        },
+        {
+            "der": 3215,
+            "emp": 412,
+            "jogadores": [
+                {
+                    "gols": 100,
+                    "nome": "Clone lourenco",
+                    "numero": 69
+                },
+                {
+                    "gols": 200,
+                    "nome": "Kelly Key",
+                    "numero": 24
+                }
+            ],
+            "nome": "Sao Paulo",
+            "pontos": 666,
+            "saldo": 999,
+            "vit": 321
+        }
+    ]
+}

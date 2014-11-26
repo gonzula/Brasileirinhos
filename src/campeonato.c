@@ -3,6 +3,8 @@
 
 #include "sgbd/binary_file.h"
 
+#define streq(a, b) (strcmp(a,b)==0)
+
 void
 campeonato_write_to_file(char *filename, Campeonato *champ)
 {
@@ -199,8 +201,97 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
 
 }
 
+Campeonato *
+campeonato_read_from_file(char *filename)
+{
+    file_manager *fm = construct_file_manager(filename);
+    char *content = read_all_bytes(fm);
+    destroy_file_manager(fm);
+    String *str = str_create(content);
+    free(content);
+    Serializable *champ_s = serializable_read_json(str);
+    release(str);
+    HashTable * champ_ht = champ_s->ht;
+
+    Campeonato *champ = alloc(sizeof(Campeonato), campeonato_release);
+    champ->times = list_init();
+    List *times_l = ((Serializable *)htable_retrieve(champ_ht, "times", 0))->list;
+    LIST_LOOP(times_l)
+    {
+        HashTable *time_ht = ((Serializable *)(node->object))->ht;
+        Time *_time = alloc(sizeof(Time), time_release);
+        String *nome_str = ((Serializable *)htable_retrieve(time_ht, "nome", 0))->str;
+        _time->nome = malloc(sizeof(char) * (nome_str->len + 1));
+        strcpy(_time->nome, nome_str->string);
+        _time->pontos = ((Serializable *)htable_retrieve(time_ht, "pontos", 0))->i;
+        _time->saldo = ((Serializable *)htable_retrieve(time_ht, "saldo", 0))->i;
+        _time->vit = ((Serializable *)htable_retrieve(time_ht, "vit", 0))->i;
+        _time->emp = ((Serializable *)htable_retrieve(time_ht, "emp", 0))->i;
+        _time->der = ((Serializable *)htable_retrieve(time_ht, "der", 0))->i;
+        _time->jogadores = list_init();
+        List *jogadores_l = ((Serializable *)htable_retrieve(time_ht, "jogadores", 0))->list;
+        LIST_LOOP(jogadores_l)
+        {
+            HashTable *jogador_ht = ((Serializable *)(node->object))->ht;
+            Jogador *j = alloc(sizeof(Jogador), jogador_release);
+            String *nome_str = ((Serializable *)htable_retrieve(jogador_ht, "nome", 0))->str;
+            j->nome = malloc(sizeof(char) * (nome_str->len + 1));
+            strcpy(j->nome, nome_str->string);
+            j->numero = ((Serializable *)htable_retrieve(jogador_ht, "numero", 0))->i;
+            j->gols = ((Serializable *)htable_retrieve(jogador_ht, "gols", 0))->i;
+            list_append(_time->jogadores, j);
+            release(j);
+        }
+        list_append(champ->times, _time);
+        release(_time);
+    }
+    champ->rodadas = list_init();
+    List *rodadas_l = ((Serializable *)htable_retrieve(champ_ht, "rodadas", 0))->list;
+    LIST_LOOP(rodadas_l)
+    {
+        HashTable *rodada_ht = ((Serializable *)(node->object))->ht;
+        Rodada *rodada = alloc(sizeof(Rodada), rodada_release);
+        list_append(champ->rodadas, rodada);
+        release(rodada);
+        rodada->jaFoiRodada = ((Serializable *)htable_retrieve(rodada_ht, "ja foi rodada", 0))->i;
+        rodada->numero = ((Serializable *)htable_retrieve(rodada_ht, "numero", 0))->i;
+        rodada->jogos = list_init();
+        List *jogos_l = ((Serializable *)htable_retrieve(rodada_ht, "jogos", 0))->list;
+        LIST_LOOP(jogos_l)
+        {
+            HashTable *jogo_ht = ((Serializable *)(node->object))->ht;
+            Jogo *j = alloc(sizeof(Jogo), jogo_release);
+            list_append(rodada->jogos, j);
+            j->jaFoiJogo = ((Serializable *)htable_retrieve(jogo_ht, "ja foi jogo", 0))->i;
+            j->gols1 = ((Serializable *)htable_retrieve(jogo_ht, "gols 1", 0))->i;
+            j->gols2 = ((Serializable *)htable_retrieve(jogo_ht, "gols 2", 0))->i;
+            char *time1 = ((Serializable *)htable_retrieve(jogo_ht, "time 1", 0))->str->string;
+            char *time2 = ((Serializable *)htable_retrieve(jogo_ht, "time 2", 0))->str->string;
+            LIST_LOOP(champ->times)
+            {
+                Time *_t = node->object;
+                if (streq(_t->nome, time1))
+                {
+                    j->time1 = _t;
+                    retain(_t);
+                }
+                if (streq(_t->nome, time2))
+                {
+                    j->time2 = _t;
+                    retain(_t);
+                }
+            }
+            release(j);
+        }
+    }
+
+    release(champ_s);
+    return champ;
+}
+
+
 void
-champ_release(void *champ)
+campeonato_release(void *champ)
 {
     Campeonato *c = champ;
     release(c->times);
@@ -238,8 +329,3 @@ jogo_release(void *jogo)
 }
 
 
-Campeonato *
-campeonato_read_from_file(char *filename)
-{
-    return NULL;
-}

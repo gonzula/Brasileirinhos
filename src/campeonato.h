@@ -33,7 +33,7 @@ typedef struct Campeonato{
 void campeonato_write_to_file(char *filename, Campeonato *champ);
 Campeonato * campeonato_read_from_file(char *filename);
 
-void champ_release(void *champ);
+void campeonato_release(void *champ);
 void jogador_release(void *jogador);
 void time_release(void *_time);
 void rodada_release(void *rodada);
