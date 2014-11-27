@@ -15,7 +15,7 @@ alloc(size_t size, refcnt_obj_free freeFunc)
     _refcnt_objwrapper * ow;
     void * ptr;
 
-    ow = (_refcnt_objwrapper *)malloc(sizeof(_refcnt_objwrapper) + size);
+    ow = (_refcnt_objwrapper *)calloc(1, sizeof(_refcnt_objwrapper) + size);
     ptr = ow;
     ptr += sizeof(_refcnt_objwrapper);
     ow->retainCnt = 1;
@@ -28,7 +28,7 @@ alloc(size_t size, refcnt_obj_free freeFunc)
 void
 retain(void *ptr)
 {
-
+    if (!ptr)return;
     _refcnt_objwrapper * ow;
     void *cptr;
     cptr  = ptr;
@@ -40,6 +40,7 @@ retain(void *ptr)
 void
 release(void *ptr)
 {
+    if (!ptr)return;
     _refcnt_objwrapper * ow;
     char *cptr;
     cptr  = (char *)ptr;

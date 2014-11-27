@@ -302,14 +302,16 @@ void
 jogador_release(void *jogador)
 {
     Jogador *j = jogador;
-    free(j->nome);
+    if (j->nome)
+        free(j->nome);
 }
 
 void
 time_release(void *_time)
 {
     Time *t = (Time *)_time;
-    free(t->nome);
+    if (t->nome)
+        free(t->nome);
     release(t->jogadores);
 }
 
