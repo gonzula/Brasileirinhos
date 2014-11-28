@@ -5,6 +5,7 @@
 
 #define streq(a, b) (strcmp(a,b)==0)
 
+
 #define KEY_TIMES "times"
 #define KEY_NOME "nome"
 #define KEY_PONTOS "pontos"
