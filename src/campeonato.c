@@ -5,6 +5,25 @@
 
 #define streq(a, b) (strcmp(a,b)==0)
 
+#define KEY_TIMES "times"
+#define KEY_NOME "nome"
+#define KEY_PONTOS "pontos"
+#define KEY_SALDO "saldo"
+#define KEY_VIT "vit"
+#define KEY_EMP "emp"
+#define KEY_DER "der"
+#define KEY_JOGADORES "jogadores"
+#define KEY_NUMERO "numero"
+#define KEY_GOLS "gols"
+#define KEY_RODADAS "rodadas"
+#define KEY_JA_FOI_RODADA "ja foi rodada"
+#define KEY_JOGOS "jogos"
+#define KEY_GOLS1 "gols 1"
+#define KEY_GOLS2 "gols 2"
+#define KEY_JA_FOI_JOGO "ja foi jogo"
+#define KEY_TIME1 "time 1"
+#define KEY_TIME2 "time 2"
+
 void
 campeonato_write_to_file(char *filename, Campeonato *champ)
 {
@@ -16,7 +35,7 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
     Serializable *times_s = serializable_create(times_l, list_t);
     release(times_l);
 
-    htable_set(campeonato_ht, "times", times_s);
+    htable_set(campeonato_ht, KEY_TIMES, times_s);
     release(times_s);
 
     LIST_LOOP(champ->times)
@@ -30,7 +49,7 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
         {
             String *nome_str = str_create(_time->nome);
             Serializable *nome_s = serializable_create(nome_str, str_t);
-            htable_set(time_ht, "nome", nome_s);
+            htable_set(time_ht, KEY_NOME, nome_s);
             release(nome_s);
             release(nome_str);
         }
@@ -38,41 +57,41 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
             Serializable *s = serializable_init();
             s->type = int_t;
             s->i = _time->pontos;
-            htable_set(time_ht, "pontos", s);
+            htable_set(time_ht, KEY_PONTOS, s);
             release(s);
         }
         {
             Serializable *s = serializable_init();
             s->type = int_t;
             s->i = _time->saldo;
-            htable_set(time_ht, "saldo", s);
+            htable_set(time_ht, KEY_SALDO, s);
             release(s);
         }
         {
             Serializable *s = serializable_init();
             s->type = int_t;
             s->i = _time->vit;
-            htable_set(time_ht, "vit", s);
+            htable_set(time_ht, KEY_VIT, s);
             release(s);
         }
         {
             Serializable *s = serializable_init();
             s->type = int_t;
             s->i = _time->emp;
-            htable_set(time_ht, "emp", s);
+            htable_set(time_ht, KEY_EMP, s);
             release(s);
         }
         {
             Serializable *s = serializable_init();
             s->type = int_t;
             s->i = _time->der;
-            htable_set(time_ht, "der", s);
+            htable_set(time_ht, KEY_DER, s);
             release(s);
         }
         {
             List *jogadores_l = list_init();
             Serializable *jogadores_s = serializable_create(jogadores_l, list_t);
-            htable_set(time_ht, "jogadores", jogadores_s);
+            htable_set(time_ht, KEY_JOGADORES, jogadores_s);
             release(jogadores_l);
             release(jogadores_s);
             LIST_LOOP(_time->jogadores)
@@ -86,7 +105,7 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
                 {
                     String *nome_str = str_create(jogador->nome);
                     Serializable *nome_s = serializable_create(nome_str, str_t);
-                    htable_set(jogador_ht, "nome", nome_s);
+                    htable_set(jogador_ht, KEY_NOME, nome_s);
                     release(nome_s);
                     release(nome_str);
                 }
@@ -94,14 +113,14 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
                     Serializable *s = serializable_init();
                     s->type = int_t;
                     s->i = jogador->numero;
-                    htable_set(jogador_ht, "numero", s);
+                    htable_set(jogador_ht, KEY_NUMERO, s);
                     release(s);
                 }
                 {
                     Serializable *s = serializable_init();
                     s->type = int_t;
                     s->i = jogador->gols;
-                    htable_set(jogador_ht, "gols", s);
+                    htable_set(jogador_ht, KEY_GOLS, s);
                     release(s);
                 }
             }
@@ -109,7 +128,7 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
 
         List *rodadas_l = list_init();
         Serializable *rodadas_s = serializable_create(rodadas_l, list_t);
-        htable_set(campeonato_ht, "rodadas", rodadas_s);
+        htable_set(campeonato_ht, KEY_RODADAS, rodadas_s);
         release(rodadas_l);
         release(rodadas_s);
         LIST_LOOP(champ->rodadas)
@@ -125,19 +144,19 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
                 Serializable *s = serializable_init();
                 s->type = bool_t;
                 s->i = rodada->jaFoiRodada;
-                htable_set(rodada_ht, "ja foi rodada", s);
+                htable_set(rodada_ht, KEY_JA_FOI_RODADA, s);
                 release(s);
             }
             {
                 Serializable *s = serializable_init();
                 s->type = int_t;
                 s->i = rodada->numero;
-                htable_set(rodada_ht, "numero", s);
+                htable_set(rodada_ht, KEY_NUMERO, s);
                 release(s);
             }
             List *jogos_l = list_init();
             Serializable *jogos_s = serializable_create(jogos_l, list_t);
-            htable_set(rodada_ht, "jogos", jogos_s);
+            htable_set(rodada_ht, KEY_JOGOS, jogos_s);
             release(jogos_l);
             release(jogos_s);
             LIST_LOOP(rodada->jogos)
@@ -153,34 +172,34 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
                     Serializable *s = serializable_init();
                     s->type = int_t;
                     s->i = jogo->gols1;
-                    htable_set(jogo_ht, "gols 1", s);
+                    htable_set(jogo_ht, KEY_GOLS1, s);
                     release(s);
                 }
                 {
                     Serializable *s = serializable_init();
                     s->type = int_t;
                     s->i = jogo->gols2;
-                    htable_set(jogo_ht, "gols 2", s);
+                    htable_set(jogo_ht, KEY_GOLS2, s);
                     release(s);
                 }
                 {
                     Serializable *s = serializable_init();
                     s->type = bool_t;
                     s->i = jogo->jaFoiJogo;
-                    htable_set(jogo_ht, "ja foi jogo", s);
+                    htable_set(jogo_ht, KEY_JA_FOI_JOGO, s);
                     release(s);
                 }
                 {
                     String *time1_str = str_create(jogo->time1->nome);
                     Serializable *time1_s = serializable_create(time1_str, str_t);
-                    htable_set(jogo_ht, "time 1", time1_s);
+                    htable_set(jogo_ht, KEY_TIME1, time1_s);
                     release(time1_str);
                     release(time1_s);
                 }
                 {
                     String *time1_str = str_create(jogo->time2->nome);
                     Serializable *time1_s = serializable_create(time1_str, str_t);
-                    htable_set(jogo_ht, "time 2", time1_s);
+                    htable_set(jogo_ht, KEY_TIME2, time1_s);
                     release(time1_str);
                     release(time1_s);
                 }
@@ -215,30 +234,30 @@ campeonato_read_from_file(char *filename)
 
     Campeonato *champ = alloc(sizeof(Campeonato), campeonato_release);
     champ->times = list_init();
-    List *times_l = ((Serializable *)htable_retrieve(champ_ht, "times", 0))->list;
+    List *times_l = ((Serializable *)htable_retrieve(champ_ht, KEY_TIMES, 0))->list;
     LIST_LOOP(times_l)
     {
         HashTable *time_ht = ((Serializable *)(node->object))->ht;
         Time *_time = alloc(sizeof(Time), time_release);
-        String *nome_str = ((Serializable *)htable_retrieve(time_ht, "nome", 0))->str;
+        String *nome_str = ((Serializable *)htable_retrieve(time_ht, KEY_NOME, 0))->str;
         _time->nome = malloc(sizeof(char) * (nome_str->len + 1));
         strcpy(_time->nome, nome_str->string);
-        _time->pontos = ((Serializable *)htable_retrieve(time_ht, "pontos", 0))->i;
-        _time->saldo = ((Serializable *)htable_retrieve(time_ht, "saldo", 0))->i;
-        _time->vit = ((Serializable *)htable_retrieve(time_ht, "vit", 0))->i;
-        _time->emp = ((Serializable *)htable_retrieve(time_ht, "emp", 0))->i;
-        _time->der = ((Serializable *)htable_retrieve(time_ht, "der", 0))->i;
+        _time->pontos = ((Serializable *)htable_retrieve(time_ht, KEY_PONTOS, 0))->i;
+        _time->saldo = ((Serializable *)htable_retrieve(time_ht, KEY_SALDO, 0))->i;
+        _time->vit = ((Serializable *)htable_retrieve(time_ht, KEY_VIT, 0))->i;
+        _time->emp = ((Serializable *)htable_retrieve(time_ht, KEY_EMP, 0))->i;
+        _time->der = ((Serializable *)htable_retrieve(time_ht, KEY_DER, 0))->i;
         _time->jogadores = list_init();
-        List *jogadores_l = ((Serializable *)htable_retrieve(time_ht, "jogadores", 0))->list;
+        List *jogadores_l = ((Serializable *)htable_retrieve(time_ht, KEY_JOGADORES, 0))->list;
         LIST_LOOP(jogadores_l)
         {
             HashTable *jogador_ht = ((Serializable *)(node->object))->ht;
             Jogador *j = alloc(sizeof(Jogador), jogador_release);
-            String *nome_str = ((Serializable *)htable_retrieve(jogador_ht, "nome", 0))->str;
+            String *nome_str = ((Serializable *)htable_retrieve(jogador_ht, KEY_NOME, 0))->str;
             j->nome = malloc(sizeof(char) * (nome_str->len + 1));
             strcpy(j->nome, nome_str->string);
-            j->numero = ((Serializable *)htable_retrieve(jogador_ht, "numero", 0))->i;
-            j->gols = ((Serializable *)htable_retrieve(jogador_ht, "gols", 0))->i;
+            j->numero = ((Serializable *)htable_retrieve(jogador_ht, KEY_NUMERO, 0))->i;
+            j->gols = ((Serializable *)htable_retrieve(jogador_ht, KEY_GOLS, 0))->i;
             list_append(_time->jogadores, j);
             release(j);
         }
@@ -246,27 +265,27 @@ campeonato_read_from_file(char *filename)
         release(_time);
     }
     champ->rodadas = list_init();
-    List *rodadas_l = ((Serializable *)htable_retrieve(champ_ht, "rodadas", 0))->list;
+    List *rodadas_l = ((Serializable *)htable_retrieve(champ_ht, KEY_RODADAS, 0))->list;
     LIST_LOOP(rodadas_l)
     {
         HashTable *rodada_ht = ((Serializable *)(node->object))->ht;
         Rodada *rodada = alloc(sizeof(Rodada), rodada_release);
         list_append(champ->rodadas, rodada);
         release(rodada);
-        rodada->jaFoiRodada = ((Serializable *)htable_retrieve(rodada_ht, "ja foi rodada", 0))->i;
-        rodada->numero = ((Serializable *)htable_retrieve(rodada_ht, "numero", 0))->i;
+        rodada->jaFoiRodada = ((Serializable *)htable_retrieve(rodada_ht, KEY_JA_FOI_RODADA, 0))->i;
+        rodada->numero = ((Serializable *)htable_retrieve(rodada_ht, KEY_NUMERO, 0))->i;
         rodada->jogos = list_init();
-        List *jogos_l = ((Serializable *)htable_retrieve(rodada_ht, "jogos", 0))->list;
+        List *jogos_l = ((Serializable *)htable_retrieve(rodada_ht, KEY_JOGOS, 0))->list;
         LIST_LOOP(jogos_l)
         {
             HashTable *jogo_ht = ((Serializable *)(node->object))->ht;
             Jogo *j = alloc(sizeof(Jogo), jogo_release);
             list_append(rodada->jogos, j);
-            j->jaFoiJogo = ((Serializable *)htable_retrieve(jogo_ht, "ja foi jogo", 0))->i;
-            j->gols1 = ((Serializable *)htable_retrieve(jogo_ht, "gols 1", 0))->i;
-            j->gols2 = ((Serializable *)htable_retrieve(jogo_ht, "gols 2", 0))->i;
-            char *time1 = ((Serializable *)htable_retrieve(jogo_ht, "time 1", 0))->str->string;
-            char *time2 = ((Serializable *)htable_retrieve(jogo_ht, "time 2", 0))->str->string;
+            j->jaFoiJogo = ((Serializable *)htable_retrieve(jogo_ht, KEY_JA_FOI_JOGO, 0))->i;
+            j->gols1 = ((Serializable *)htable_retrieve(jogo_ht, KEY_GOLS1, 0))->i;
+            j->gols2 = ((Serializable *)htable_retrieve(jogo_ht, KEY_GOLS2, 0))->i;
+            char *time1 = ((Serializable *)htable_retrieve(jogo_ht, KEY_TIME1, 0))->str->string;
+            char *time2 = ((Serializable *)htable_retrieve(jogo_ht, KEY_TIME2, 0))->str->string;
             LIST_LOOP(champ->times)
             {
                 Time *_t = node->object;
