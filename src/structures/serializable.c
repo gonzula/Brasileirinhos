@@ -253,7 +253,7 @@ _read_json_string(char *str, size_t len, int *outPos)
                     str_append_char(s, b1.uc);
                     str_append_char(s, b2.uc);
                 }
-                else if (0xFFFF)
+                else if (val <= 0xFFFF)
                 {
                     bin8 b1, b2, b3;
                     bin32 v;
