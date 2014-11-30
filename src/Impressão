@@ -123,52 +123,55 @@ void ImprimirTime(Campeonato *c, char *ntime){ //imprime os jogadores do time, e
 
 void ImprimirArtilheiro(Campeonato *c){ //imprimi o jogador(es) com  maior numero de gols
 	
-int n1,n2,n3,gols1,gols2,gols3;
-char art1[20],art2[20],art3[20],tim1[20],tim2[20],time3[20];
-Time *aux;
-Jogagor *aux2;
-gols1==0;
+  int i,cont;
+  char art1[20];
+  Time *aux;
+  Jogagor *aux2;
+  i=0;
 	
-LIST_LOOP(c->times){
-aux=Node->object;
-LIST_LOOP(aux->jogadores){ 
-aux2=Node->object;
-if(aux2->gols>gols1){ //se for maior q o ultimo analisado com maior numero de gols
-  gols1=aux2->gols;
-  n1=aux2->numero;
-  strcpy(art1,aux2->nome);
-  strcpy(tim1,aux->nome);
-  }
-else if(aux2->gols==n1){ // se for igual ao ultimo analisado com maior numero de gols
-  if(aux2->gols==n2){ //se for igual aos 2 primeiros artilheiros q estão empatados
-    gols3=aux2->gols;
-    n3=aux2->numero;
-    strcpy(art3,aux2->nome);
-    strcpy(tim3,aux->nome);
-  }
-  else{  
-    gols2=aux2->gols;
-    n2=aux2->numero;
-    strcpy(art2,aux2->nome);
-    strcpy(tim2,aux->nome);
-  }
-}
-  else{ //nao faz nada pois não faz parte dos artilheiros
-}
-}
-}
+  Time *v=alloc(sizeof(Jogador)*220,null);
 	
-if(gols1>gols2){ 
-  printf("\n artilheiro: %s  - %d  time: %s \n",art1,n1,tim1);
-}
-else if(gols1==gols2 && gols2!=gols3){ //se houver 2 empates
-  printf("\n EMPATE \n artilheiro: %s  - %d  time: %s \n",art1,n1,tim1);
-  printf("\n artilheiro: %s  - %d  time: %s \n",art2,n2,tim2);
-}
-else if(gols1==gols2 && gols2==gols3){  //se houver tres empates
-  printf("\n EMPATE \n artilheiro: %s  - %d  time: %s \n",art1,n1,tim1);
-  printf("\n artilheiro: %s  - %d  time: %s \n",art2,n2,tim2);
-  printf("\n artilheiro: %s  - %d  time: %s \n",art3,n3,tim3);
-}
+  LIST_LOOP(c->times){
+    aux=Node->object;
+    LIST_LOOP(aux->jogadores){ 
+    aux2=Node->object;
+    if(aux2->gols>0){
+      v[i].gols=aux2->gols;
+      strcpy(v[i].nome,aux2->nome);
+      v[i].numero=aux2->numero;
+      i++;
+    }
+   }
+ }
+
+ OrdenarArtilheiros(v,i);
+	
+ for(cont=0;cont<i;cont++){
+ printf("GOLS:%d - %s  \n",v[cont].gols,v[i].nome);
+ }
  return;
+}
+	
+ void OrdenarArtilheiros(Time *v,int tamanho){
+		
+  int i, j, aux,aux2;
+  char aux1[20];
+ 
+  for(j=1; j<tamanho; j++){
+    strcpy(aux1,v[j].nome);
+    aux=v[j].gols;
+    aux2=v[j].numero;
+    i=j-1;            
+      
+    while(i>=0&& v[i].gols>aux){
+    	strcpy(v[i+1].nome,v[i].nome);
+      v[i+1].gols=v[i].gols;
+      v[i+1].numero=v[i].numero;
+      i--;
+    } 
+    strcpy(v[i+1].nome,aux1);
+    v[i+1].gols=aux;
+    v[i+1].numero=aux2;
+  }
+  return;
 }
