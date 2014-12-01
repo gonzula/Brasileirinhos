@@ -476,7 +476,7 @@ void ImprimirArtilheiro(Campeonato *c){ //imprimi o jogador(es) com  maior numer
   Jogagor *aux2;
   i=0;
 
-  Time *v=alloc(sizeof(Jogador)*220,null);
+  Jogador *v=alloc(sizeof(Jogador)*220,null);
 
   LIST_LOOP(c->times){
     aux=Node->object;
