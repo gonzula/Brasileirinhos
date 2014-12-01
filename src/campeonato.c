@@ -433,7 +433,7 @@ void ImprimirTabela(Campeonato *c){
   release(v);
 
   LIST_LOOP(c->times){ //coloca os 20 times em um vetor
-    aux = Node->object;
+    aux = node->object;
     strcpy(v[i]->nome,aux->nome);
     v[i]->pontos=aux->pontos;
     v[i]->saldo=aux->saldo;
@@ -455,10 +455,10 @@ void ImprimirTime(Campeonato *c, char *ntime){ //imprime os jogadores do time, e
   Jogador *aux2;
 
   LIST_LOOP(c->times){
-  aux=Node->object;
+  aux=node->object;
   if(strcmp(aux->nome,ntime)==0){
   LIST_LOOP(aux->jogadores){
-  aux2=Node->object;
+  aux2=node->object;
   printf("%d - ",aux2->numero);
   puts(aux2->nome);
   }
@@ -479,9 +479,9 @@ void ImprimirArtilheiro(Campeonato *c){ //imprimi o jogador(es) com  maior numer
   Jogador *v=alloc(sizeof(Jogador)*220,null);
 
   LIST_LOOP(c->times){
-    aux=Node->object;
+    aux=node->object;
     LIST_LOOP(aux->jogadores){
-    aux2=Node->object;
+    aux2=node->object;
     if(aux2->gols>0){
       v[i].gols=aux2->gols;
       strcpy(v[i].nome,aux2->nome);
