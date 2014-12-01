@@ -7,6 +7,10 @@
 #include "htable.h"
 #include "str.h"
 #include "serializable.h"
+#include "vector.h"
+
+List * list_from_vector(Vector * v);
+Vector * vector_from_list(List *aList);
 
 typedef union
 {

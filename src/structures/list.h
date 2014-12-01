@@ -1,22 +1,13 @@
-/*
-//  list.h
-//  DataStructures
-//
-//  Created by Gonzo Fialho on 5/16/14.
-//  Copyright (c) 2014 CEAFDC. All rights reserved.
-*/
-
 #ifndef structures_list_h
 #define structures_list_h
-
 
 #define LIST_LOOP(_list) for (Node *node = _list->firstNode; node; node = node->next)
 
 typedef struct _node
 {
     void * object;
-    struct _node * prev;
-    struct _node * next;
+    struct _node *prev;
+    struct _node *next;
 } Node;
 
 typedef struct

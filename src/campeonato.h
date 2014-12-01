@@ -39,5 +39,12 @@ void time_release(void *_time);
 void rodada_release(void *rodada);
 void jogo_release(void *jogo);
 
+void registraJogo(Campeonato *c);
+void geraResultadoCampeonato(Campeonato *c);
+void geraResultadoRodada(Campeonato *c,int rodada);
+void geraResultadosJogo(Campeonato *c);
+
+Time * encontraTime(Campeonato *c, char *nome);
+
 
 #endif // CAMPEONATO_H_INCLUDED
