@@ -369,10 +369,10 @@ void OrdenarTabela(Time *v){// ordenado por  pontos  utilizando insertion sort
         v[i+1].vit=v[i].vit;
         i--;
       }
-      v[i+1].pontos=aux;
-      strcpy(v[i+1].nome,aux1);
-      v[i+1].saldo=aux3;
-      v[i+1].vit=aux4;
+        v[i+1].pontos=aux;
+        strcpy(v[i+1].nome,aux1);
+        v[i+1].saldo=aux3;
+        v[i+1].vit=aux4;
    }//termina insertionsort
 
    for(j=0;j<=18;j++){  //ordenar por saldo se pontos forem iguais
@@ -499,7 +499,7 @@ void ImprimirArtilheiro(Campeonato *c){ //imprimi o jogador(es) com  maior numer
  return;
 }
 
- void OrdenarArtilheiros(Time *v,int tamanho){
+ void OrdenarArtilheiros(Jogador *v,int tamanho){
 
   int i, j, aux,aux2;
   char aux1[20];
