@@ -5,7 +5,6 @@
 
 #define streq(a, b) (strcmp(a,b)==0)
 
-
 #define KEY_TIMES "times"
 #define KEY_NOME "nome"
 #define KEY_PONTOS "pontos"
@@ -207,9 +206,6 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
             }
         }
     }
-
-
-
     String *json = serializable_write_json(campeonato_s);
     release(campeonato_s);
 
@@ -350,4 +346,220 @@ jogo_release(void *jogo)
     release(j->time2);
 }
 
+Rodada *
+rodadaAtual(Campeonato *c){
+    LIST_LOOP(c->rodadas){
+        Rodada *r = node->object;
+        if(!r->jaFoiRodada)
+            return r;
+    }
+    return NULL;
+}
 
+Rodada *
+encontraRodada(Campeonato *c,int numero){
+     LIST_LOOP(c->rodadas){
+        Rodada *r = node->object;
+        if(r->numero == numero)
+            return r;
+     }
+     return NULL;
+}
+
+
+Vector *
+jogosDisponiveis(Rodada *r)
+{
+    Vector *v = vector_init();
+    LIST_LOOP(r->jogos)
+    {
+        Jogo *j = node->object;
+        if(!j->jaFoiJogo)
+            vector_append(v, j);
+    }
+    return v;
+}
+
+Time *
+encontraTime(Campeonato *c, char *nome){
+    LIST_LOOP(c->times)
+    {
+        Time *t = node->object;
+        if(streq(t->nome,nome))
+            return t;
+    }
+    return NULL;
+}
+
+void
+imprimeVetorJogos(Vector *v)
+{
+    for (int i = 0; i < v->count; i++)
+    {
+        Jogo *j = v->objs[i];
+        printf("%d - %s X %s \n", i, j->time1->nome, j->time2->nome);
+    }
+}
+
+void
+adicionaGolsJogadores(Time *t)
+{
+    int i = rand() % (t->jogadores->count); // gera um numero randomico entra 0 e numero de jogadores
+    Vector * jogadores = vector_from_list(t->jogadores);
+    Jogador *j = jogadores->objs[i];
+    j->gols++;
+    release(jogadores);
+}
+
+int
+verificaAcabouRodada(Rodada *r)
+{
+    r->jaFoiRodada = 1;
+    LIST_LOOP(r->jogos)
+    {
+        Jogo *j = node->object;
+        if(!j->jaFoiJogo)
+        {
+            r->jaFoiRodada = 0;
+            break;
+        }
+    }
+    return r->jaFoiRodada;
+}
+
+void alteraCampeonato(Campeonato *c, Jogo *j)
+{
+    int g1 = j->gols1,g2 = j->gols2;
+    Time *time1 = j->time1;//encontraTime(c, j->time1->nome);
+    Time *time2 = j->time2;//encontraTime(c, j->time2->nome);
+    if (g1 > g2)
+    {
+        time1->vit++;
+        time1->pontos = time1->pontos + 3;
+        time2->der++;
+    }
+    else if(g1 < g2)
+    {
+        time1->der++;
+        time2->vit++;
+        time2->pontos = time2->pontos + 3;
+    }
+    else if(g1 == g2)
+    {
+        time1->emp++;
+        time1->pontos = time1->pontos + 1;
+        time2->emp++;
+        time2->pontos = time2->pontos + 1;
+    }
+    time1->saldo += g1 - g2;
+    time2->saldo += g2 - g1;
+    while(g1 > 0)
+    {
+        adicionaGolsJogadores(time1);
+        g1--;
+    }
+    while(g2 > 0)
+    {
+        adicionaGolsJogadores(time2);
+        g2--;
+    }
+}
+
+void
+registraJogo(Campeonato *c)
+{
+    Rodada *rodadaAt = rodadaAtual(c);
+    if (rodadaAt == NULL)
+    {
+        printf("O campeonato ja acabou.\n");
+        return;
+    }
+    else
+    {
+        Vector *jogos;
+        int selecao, gols1, gols2;
+        jogos = jogosDisponiveis(rodadaAt);
+        printf("Rodada atual: %d\n", rodadaAt->numero);
+        printf("Jogos Disponiveis:\n");
+        imprimeVetorJogos(jogos);
+        printf("Opção: ");
+        scanf("%d",&selecao);
+        Jogo *j = jogos->objs[selecao];
+        printf("Digite o resultado da partida entre %s X %s:", j->time1->nome, j->time2->nome);
+        scanf("%d %d", &gols1, &gols2);
+        j->gols1 = gols1;
+        j->gols2 = gols2;
+        alteraCampeonato(c, jogos->objs[selecao]);
+        j->jaFoiJogo = 1;
+        release(jogos);
+    }
+    verificaAcabouRodada(rodadaAt);
+}
+
+void geraResultadoRodada(Campeonato *c,int rodada)
+{
+    Rodada *rodadaAt = encontraRodada(c,rodada);
+    if (rodadaAt == NULL || rodadaAt->jaFoiRodada)
+    {
+        printf("Ja foram todas as rodadas do campeonato.");
+        return;
+    }
+    else
+    {
+        Vector *jogos;
+        int gols1,gols2,i;
+        jogos = jogosDisponiveis(rodadaAt);
+        for (i = 0; i < jogos->count; i++)
+        {
+            Jogo *j = jogos->objs[i];
+            if(!j->jaFoiJogo)
+            {
+                gols1 =  rand() % 7;
+                gols2 =  rand() % 7;
+                j->gols1 = gols1;
+                j->gols2 = gols2;
+                alteraCampeonato(c, j);
+                j->jaFoiJogo = 1;
+            }
+        }
+        release(jogos);
+    }
+}
+
+void
+geraResultadosJogo(Campeonato *c)
+{
+    Rodada *rodadaAt = rodadaAtual(c);
+    if (rodadaAt == NULL){
+        printf("O campeonato acabou\n");
+        return;
+    }
+    else{
+        Vector *jogos;
+        int gols1, gols2, selecao;
+        jogos = jogosDisponiveis(rodadaAt);
+
+        selecao = rand() % jogos->count;
+        gols1 =  rand() % 7;
+        gols2 =  rand() % 7;
+        Jogo *j = jogos->objs[selecao];
+        j->gols1 = gols1;
+        j->gols2 = gols2;
+        alteraCampeonato(c, j);
+        j->jaFoiJogo = 1;
+        release(jogos);
+    }
+    verificaAcabouRodada(rodadaAt);
+    return;
+}
+
+void
+geraResultadoCampeonato(Campeonato *c)
+{
+    LIST_LOOP(c->rodadas)
+    {
+        Rodada *r = node->object;
+        if(!r->jaFoiRodada)
+            geraResultadoRodada(c,r->numero);
+    }
+}

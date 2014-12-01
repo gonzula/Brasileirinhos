@@ -8,7 +8,10 @@
 
 #include <stdlib.h>
 #include "list.h"
+#include "vector.h"
 #include "refcnt.h"
+
+
 
 void _list_release(void *aList);
 
