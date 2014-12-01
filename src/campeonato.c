@@ -350,4 +350,177 @@ jogo_release(void *jogo)
     release(j->time2);
 }
 
+void OrdenarTabela(Time *v){// ordenado por  pontos  utilizando insertion sort  
+   int i, j, aux,aux3,aux4;  //e depois loops que ordenam por saldos e vitórias
+   char aux1[20];
+ 
+   for(j=1; j<20; j++) { 
+      aux=v[j].pontos;     
+      strcpy(aux1,v[j].nome);
+      aux3=v[j].saldo;
+      aux4=v[j].vit;
+      
+      i = j-1; 
+      
+      while(i>=0 && v[i].pontos>aux){
+        strcpy(v[i+1].nome,v[i].nome);
+	v[i+1].pontos=v[i].pontos;
+        v[i+1].saldo=v[i].saldo;
+        v[i+1].vit=v[i].vit;
+        i--;
+      } 
+      v[i+1].pontos=aux;
+      strcpy(v[i+1].nome,aux1);
+      v[i+1].saldo=aux3;
+      v[i+1].vit=aux4;
+   }//termina insertionsort
+   
+   for(j=0;j<=18;j++){  //ordenar por saldo se pontos forem iguais
+     aux=v[j].pontos;     
+     strcpy(aux1,v[j].nome);
+     aux3=v[j].saldo;
+     aux4=v[j].vit;
+     
+     for(i=j+1;i<=19;i++){
+       if(v[j].pontos==v[i].pontos){ //se  pontos forem iguais
+       if(v[j].saldo>v[i].saldo){ // se v[j]>v[i]nao faz nada
+       }
+       else if(v[j].saldo<v[i].saldo){ 
+         strcpy(aux1,v[i].nome);  //tornando assim  v[i]=v[j]  e v[j]=v[i] 
+         aux=v[i].pontos;         //e o loop continua normalmente comparando com o resto dos elementos.
+         aux3=v[i].saldo;
+	 aux4=v[i].vit;
+         strcpy(v[i].nome,v[j].nome);
+	 v[i].pontos=v[j].pontos;
+	 v[i].saldo=v[j].saldo;
+	 v[i].vit=v[j].vit;
+	 strcpy(v[j].nome,aux1);
+	 v[j].pontos=aux;
+	 v[j].saldo=aux3;
+	 v[j].vit=aux4;
+       }
+       else{ //se os saldos forem iguais também, comeca comparar por vitorias
+         if(v[j].vit>v[i].vit){// nao faz nada
+	  }
+	  else if(v[j].vit<v[i].vit){
+	    strcpy(aux1,v[i].nome);  //tornando assim  v[i]=v[j]  e v[j]=v[i] 
+	    aux=v[i].pontos;  //e o loop continua normalmente comparando o novo v[j] com o resto dos elementos.
+	    aux3=v[i].saldo;
+	    aux4=v[i].vit;
+            strcpy(v[i].nome,v[j].nome);
+	    v[i].pontos=v[j].pontos;
+	    v[i].saldo=v[j].saldo;
+	    v[i].vit=v[j].vit;
+	    strcpy(v[j].nome,aux1);
+	    v[j].pontos=aux;
+	    v[j].saldo=aux3;
+	    v[j].vit=aux4;
+	  }
+          else{// se o numero de vitorias também forem iguais  não faz nada
+          }
+        }
+     }
+     else{ //se nao for  igual numero de pontos não faz nada
+     }
+    }
+   }
+}
+
+void ImprimirTabela(Campeonato *c){
+  int i=0; 
+  Time *aux,*v;
+  v=alloc(sizeof(Time)*20,null);
+  release(v);
+  
+  LIST_LOOP(c->times){ //coloca os 20 times em um vetor
+    aux=Node->object
+    strcpy(v[i]->nome,aux->nome);
+    v[i]->pontos=aux->pontos;
+    v[i]->saldo=aux->saldo;
+    v[i]->vit=aux->vit;
+    v[i]->der=aux->der;
+    v[i]->emp=aux->emp;	
+  }
+  OrdenarTabela(v); //ordena o vetor 
+  
+  for(i=0;i<20;i++){
+    printf("%d - %s  %d pontos",i,v[i].nome,v[i].pontos);
+  }
+  return;
+}
+
+void ImprimirTime(Campeonato *c, char *ntime){ //imprime os jogadores do time, entrada  nome do time
+  
+  Time *aux;
+  Jogador *aux2;
+
+  LIST_LOOP(c->times){
+  aux=Node->object;
+  if(strcmp(aux->nome,ntime)==0){
+  LIST_LOOP(aux->jogadores){
+  aux2=Node->object;
+  printf("%d - ",aux2->numero);
+  puts(aux2->nome);
+  }
+  break;
+  }
+  }
+  return;
+}
+
+void ImprimirArtilheiro(Campeonato *c){ //imprimi o jogador(es) com  maior numero de gols
+	
+  int i,cont;
+  char art1[20];
+  Time *aux;
+  Jogagor *aux2;
+  i=0;
+	
+  Time *v=alloc(sizeof(Jogador)*220,null);
+	
+  LIST_LOOP(c->times){
+    aux=Node->object;
+    LIST_LOOP(aux->jogadores){ 
+    aux2=Node->object;
+    if(aux2->gols>0){
+      v[i].gols=aux2->gols;
+      strcpy(v[i].nome,aux2->nome);
+      v[i].numero=aux2->numero;
+      i++;
+    }
+   }
+ }
+
+ OrdenarArtilheiros(v,i);
+	
+ for(cont=0;cont<i;cont++){
+ printf("GOLS:%d - %s  \n",v[cont].gols,v[i].nome);
+ }
+ return;
+}
+	
+ void OrdenarArtilheiros(Time *v,int tamanho){
+		
+  int i, j, aux,aux2;
+  char aux1[20];
+ 
+  for(j=1; j<tamanho; j++){
+    strcpy(aux1,v[j].nome);
+    aux=v[j].gols;
+    aux2=v[j].numero;
+    i=j-1;            
+      
+    while(i>=0&& v[i].gols>aux){
+    	strcpy(v[i+1].nome,v[i].nome);
+      v[i+1].gols=v[i].gols;
+      v[i+1].numero=v[i].numero;
+      i--;
+    } 
+    strcpy(v[i+1].nome,aux1);
+    v[i+1].gols=aux;
+    v[i+1].numero=aux2;
+  }
+  return;
+}
+
 
