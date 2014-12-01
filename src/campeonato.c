@@ -440,6 +440,7 @@ void ImprimirTabela(Campeonato *c){
     v[i]->vit=aux->vit;
     v[i]->der=aux->der;
     v[i]->emp=aux->emp;
+    i++;
   }
   OrdenarTabela(v); //ordena o vetor
 
