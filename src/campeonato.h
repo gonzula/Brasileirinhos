@@ -43,6 +43,10 @@ void ImprimirTabela(Campeonato *c);
 void ImprimirTime(Campeonato *c, char *ntime);
 void ImprimirArtilheiro(Campeonato *c);
 void OrdenarArtilheiros(Time *v,int tamanho);
+void registraJogo(Campeonato *c);
+void geraResultadoCampeonato(Campeonato *c);
+void geraResultadoRodada(Campeonato *c,int rodada);
+void geraResultadosJogo(Campeonato *c);
 
 
 #endif // CAMPEONATO_H_INCLUDED

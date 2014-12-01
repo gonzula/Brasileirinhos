@@ -7,6 +7,41 @@
 
 #include "campeonato.h"
 
+void
+menu(Campeonato *c){
+    int opcao = -1;
+    while (opcao != 0){
+        printf("Escolha a opção:\n");
+        printf("1 - Registrar um jogo\n");
+        printf("2 - Gerar um jogo aleatório da rodada\n");
+        printf("3 - Gerar uma rodada\n");
+        printf("4 - Gerar o campeonato\n");
+        printf("Opção: ");
+        scanf("%d",&opcao);
+        selecionaOpcao(opcao,c);
+    }
+}
+
+void
+selecionaOpcao(int opcao, Campeonato *c){
+    int rodada;
+    switch(opcao){
+        case 1:
+            registraJogo(c);
+            break;
+        case 2:
+            geraResultadosJogo(c);
+            break;
+        case 3:
+            printf("Digite a rodada escolhida para ser gerada:");
+            scanf("%d",&rodada);
+            geraResultadoRodada(c,rodada);
+            break;
+        case 4:
+            geraResultadoCampeonato(c);
+            break;
+    }
+}
 int
 main(int argc, const char * argv[])
 {
@@ -200,7 +235,7 @@ main(int argc, const char * argv[])
 
 
     // Campeonato *champ = campeonato_read_from_file("champ.json");
-
+    menu(champ);
 
     campeonato_write_to_file("saida.json", champ);
 

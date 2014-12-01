@@ -350,43 +350,43 @@ jogo_release(void *jogo)
     release(j->time2);
 }
 
-void OrdenarTabela(Time *v){// ordenado por  pontos  utilizando insertion sort  
+void OrdenarTabela(Time *v){// ordenado por  pontos  utilizando insertion sort
    int i, j, aux,aux3,aux4;  //e depois loops que ordenam por saldos e vitórias
    char aux1[20];
- 
-   for(j=1; j<20; j++) { 
-      aux=v[j].pontos;     
+
+   for(j=1; j<20; j++) {
+      aux=v[j].pontos;
       strcpy(aux1,v[j].nome);
       aux3=v[j].saldo;
       aux4=v[j].vit;
-      
-      i = j-1; 
-      
+
+      i = j-1;
+
       while(i>=0 && v[i].pontos>aux){
         strcpy(v[i+1].nome,v[i].nome);
 	v[i+1].pontos=v[i].pontos;
         v[i+1].saldo=v[i].saldo;
         v[i+1].vit=v[i].vit;
         i--;
-      } 
+      }
       v[i+1].pontos=aux;
       strcpy(v[i+1].nome,aux1);
       v[i+1].saldo=aux3;
       v[i+1].vit=aux4;
    }//termina insertionsort
-   
+
    for(j=0;j<=18;j++){  //ordenar por saldo se pontos forem iguais
-     aux=v[j].pontos;     
+     aux=v[j].pontos;
      strcpy(aux1,v[j].nome);
      aux3=v[j].saldo;
      aux4=v[j].vit;
-     
+
      for(i=j+1;i<=19;i++){
        if(v[j].pontos==v[i].pontos){ //se  pontos forem iguais
        if(v[j].saldo>v[i].saldo){ // se v[j]>v[i]nao faz nada
        }
-       else if(v[j].saldo<v[i].saldo){ 
-         strcpy(aux1,v[i].nome);  //tornando assim  v[i]=v[j]  e v[j]=v[i] 
+       else if(v[j].saldo<v[i].saldo){
+         strcpy(aux1,v[i].nome);  //tornando assim  v[i]=v[j]  e v[j]=v[i]
          aux=v[i].pontos;         //e o loop continua normalmente comparando com o resto dos elementos.
          aux3=v[i].saldo;
 	 aux4=v[i].vit;
@@ -403,7 +403,7 @@ void OrdenarTabela(Time *v){// ordenado por  pontos  utilizando insertion sort
          if(v[j].vit>v[i].vit){// nao faz nada
 	  }
 	  else if(v[j].vit<v[i].vit){
-	    strcpy(aux1,v[i].nome);  //tornando assim  v[i]=v[j]  e v[j]=v[i] 
+	    strcpy(aux1,v[i].nome);  //tornando assim  v[i]=v[j]  e v[j]=v[i]
 	    aux=v[i].pontos;  //e o loop continua normalmente comparando o novo v[j] com o resto dos elementos.
 	    aux3=v[i].saldo;
 	    aux4=v[i].vit;
@@ -427,22 +427,22 @@ void OrdenarTabela(Time *v){// ordenado por  pontos  utilizando insertion sort
 }
 
 void ImprimirTabela(Campeonato *c){
-  int i=0; 
+  int i=0;
   Time *aux,*v;
-  v=alloc(sizeof(Time)*20,null);
+  v=alloc(sizeof(Time)*20,NULL);
   release(v);
-  
+
   LIST_LOOP(c->times){ //coloca os 20 times em um vetor
-    aux=Node->object
+    aux = node->object;
     strcpy(v[i]->nome,aux->nome);
     v[i]->pontos=aux->pontos;
     v[i]->saldo=aux->saldo;
     v[i]->vit=aux->vit;
     v[i]->der=aux->der;
-    v[i]->emp=aux->emp;	
+    v[i]->emp=aux->emp;
   }
-  OrdenarTabela(v); //ordena o vetor 
-  
+  OrdenarTabela(v); //ordena o vetor
+
   for(i=0;i<20;i++){
     printf("%d - %s  %d pontos",i,v[i].nome,v[i].pontos);
   }
@@ -450,7 +450,7 @@ void ImprimirTabela(Campeonato *c){
 }
 
 void ImprimirTime(Campeonato *c, char *ntime){ //imprime os jogadores do time, entrada  nome do time
-  
+
   Time *aux;
   Jogador *aux2;
 
@@ -469,18 +469,18 @@ void ImprimirTime(Campeonato *c, char *ntime){ //imprime os jogadores do time, e
 }
 
 void ImprimirArtilheiro(Campeonato *c){ //imprimi o jogador(es) com  maior numero de gols
-	
+
   int i,cont;
   char art1[20];
   Time *aux;
   Jogagor *aux2;
   i=0;
-	
+
   Time *v=alloc(sizeof(Jogador)*220,null);
-	
+
   LIST_LOOP(c->times){
     aux=Node->object;
-    LIST_LOOP(aux->jogadores){ 
+    LIST_LOOP(aux->jogadores){
     aux2=Node->object;
     if(aux2->gols>0){
       v[i].gols=aux2->gols;
@@ -492,35 +492,228 @@ void ImprimirArtilheiro(Campeonato *c){ //imprimi o jogador(es) com  maior numer
  }
 
  OrdenarArtilheiros(v,i);
-	
+
  for(cont=0;cont<i;cont++){
  printf("GOLS:%d - %s  \n",v[cont].gols,v[i].nome);
  }
  return;
 }
-	
+
  void OrdenarArtilheiros(Time *v,int tamanho){
-		
+
   int i, j, aux,aux2;
   char aux1[20];
- 
+
   for(j=1; j<tamanho; j++){
     strcpy(aux1,v[j].nome);
     aux=v[j].gols;
     aux2=v[j].numero;
-    i=j-1;            
-      
+    i=j-1;
+
     while(i>=0&& v[i].gols>aux){
     	strcpy(v[i+1].nome,v[i].nome);
       v[i+1].gols=v[i].gols;
       v[i+1].numero=v[i].numero;
       i--;
-    } 
+    }
     strcpy(v[i+1].nome,aux1);
     v[i+1].gols=aux;
     v[i+1].numero=aux2;
   }
   return;
+}
+
+Rodada *rodadaAtual(Campeonato *c){
+    LIST_LOOP(c->rodadas){
+        Rodada *r = node->object;
+        if(!r->jaFoiRodada)
+            return r;
+    }
+    return NULL;
+}
+
+Rodada *encontraRodada(Campeonato *c,int numero){
+     LIST_LOOP(c->rodadas){
+        Rodada *r = node->object;
+        if(r->numero == numero)
+            return r;
+     }
+     return NULL;
+}
+
+void jogosDisponiveis(Rodada *r,Jogo *vJogos[]){
+    int i = 0;
+    LIST_LOOP(r->jogos){
+        Jogo *j = node->object;
+        if(!j->jaFoiJogo){
+            vJogos[i] = j;
+            i++;
+        }
+    }
+
+}
+
+void limpaVetorJogos(Jogo *vJogos[]){
+    int i = 0;
+    for(i = 0;i < 10; i++)
+        vJogos[i] = NULL;
+}
+
+Time *encontraTime(char *nome, Campeonato *c){
+    LIST_LOOP(c->times){
+        Time *t = node->object;
+        if(strcmp(t->nome,nome) == 0)
+            return t;
+    }
+    return NULL;
+}
+
+void imprimeVetorJogos(Jogo *vJogos[]){
+    int i = 0;
+    for(i = 0; i < 10; i++)
+        if(vJogos[i] != NULL)
+            printf("%d - %s X %s \n",i,vJogos[i]->time1->nome,vJogos[i]->time2->nome);
+}
+
+void adicionaGolsJogadores(Time *t){
+    srand(time(NULL));
+    int i = rand() % 11,k = 0; // gera um numero randomico entra 0 e 10
+    LIST_LOOP(t->jogadores){
+        Jogador *j = node->object;
+        if (i == k){
+            j->gols++;
+            break;
+        }
+        else
+            k++;
+    }
+}
+int verificaAcabouRodada(Rodada *r){
+    LIST_LOOP(r->jogos){
+        Jogo *j = node->object;
+        if(!j->jaFoiJogo)
+            return 0;
+    }
+    return 1;
+}
+
+void alteraCampeonato(Jogo *j,Campeonato *c){
+    int g1 = j->gols1,g2 = j->gols2;
+    Time *time1 = encontraTime(j->time1->nome,c);
+    Time *time2 = encontraTime(j->time2->nome,c);
+    if (j->gols1 > j->gols2){
+        time1->vit++;
+        time1->pontos = time1->pontos+3;
+        time2->der++;
+    }
+    else if(j->gols1 < j->gols2){
+        time1->der++;
+        time2->vit++;
+        time2->pontos = time2->pontos+3;
+    }
+    else if(j->gols1 == j->gols2){
+        time1->emp++;
+        time1->pontos = time1->pontos+1;
+        time2->emp++;
+        time2->pontos = time2->pontos+1;
+    }
+    time1->saldo += g1-g2;
+    time2->saldo += g2-g1;
+    while(g1 > 0){
+        adicionaGolsJogadores(time1);
+        g1--;
+    }
+    while(g2 > 0){
+        adicionaGolsJogadores(time2);
+        g2--;
+    }
+}
+
+void registraJogo(Campeonato *c){
+    Rodada *rodadaAt = rodadaAtual(c);
+    if (rodadaAt == NULL){
+        printf("O campeonato ja acabou.\n");
+        return;
+    }
+    else{
+        Jogo *jogos[10];
+        int selecao,gols1,gols2;
+        limpaVetorJogos(jogos);
+        jogosDisponiveis(rodadaAt,jogos);
+        printf("Rodada atual: %d\n",rodadaAt->numero);
+        printf("Jogos Disponiveis:\n");
+        imprimeVetorJogos(jogos);
+        printf("Opção: ");
+        scanf("%d",&selecao);
+        printf("Digite o resultado da partida entre %s X %s:",jogos[selecao]->time1->nome,jogos[selecao]->time2->nome);
+        scanf("%d %d",&gols1,&gols2);
+        jogos[selecao]->gols1 = gols1;
+        jogos[selecao]->gols2 = gols2;
+        alteraCampeonato(jogos[selecao],c);
+        jogos[selecao]->jaFoiJogo = 1;
+    }
+    if (verificaAcabouRodada(rodadaAt))
+        rodadaAt->jaFoiRodada = 1;
+}
+
+void geraResultadoRodada(Campeonato *c,int rodada){
+    Rodada *rodadaAt = encontraRodada(c,rodada);
+    if (rodadaAt == NULL || rodadaAt->jaFoiRodada){
+        printf("Ja foram todas as rodadas do campeonato.");
+        return;
+    }
+    else{
+        Jogo *jogos[10];
+        int gols1,gols2,i;
+        limpaVetorJogos(jogos);
+        jogosDisponiveis(rodadaAt,jogos);
+        for (i = 0; i<10;i++){
+            if(jogos[i] != NULL && !jogos[i]->jaFoiJogo){
+                srand(time(NULL));
+                gols1 =  rand() % 7;
+                gols2 =  rand() % 7;
+                jogos[i]->gols1 = gols1;
+                jogos[i]->gols2 = gols2;
+                alteraCampeonato(jogos[i],c);
+                jogos[i]->jaFoiJogo = 1;
+            }
+        }
+    }
+
+}
+void geraResultadosJogo(Campeonato *c){
+    Rodada *rodadaAt = rodadaAtual(c);
+    if (rodadaAt == NULL){
+        printf("O campeonato acabou\n");
+        return;
+    }
+    else{
+        Jogo *jogos[10];
+        int i,tamanho = 0,gols1,gols2,selecao;
+        limpaVetorJogos(jogos);
+        jogosDisponiveis(rodadaAt,jogos);
+        for(i = 0; i < 10;i++)
+            if (jogos[i] != NULL)
+                tamanho++;
+        srand(time(NULL));
+        selecao = rand() % tamanho;
+        gols1 =  rand() % 7;
+        gols2 =  rand() % 7;
+        jogos[selecao]->gols1 = gols1;
+        jogos[selecao]->gols2 = gols2;
+        alteraCampeonato(jogos[selecao],c);
+        jogos[selecao]->jaFoiJogo = 1;
+    }
+    if (verificaAcabouRodada(rodadaAt))
+        rodadaAt->jaFoiRodada = 1;
+}
+
+void geraResultadoCampeonato(Campeonato *c){
+    LIST_LOOP(c->rodadas){
+        Rodada *r = node->object;
+        if(!r->jaFoiRodada)
+            geraResultadoRodada(c,r->numero);
+    }
 }
 
 
