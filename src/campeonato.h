@@ -38,24 +38,6 @@ void jogador_release(void *jogador);
 void time_release(void *_time);
 void rodada_release(void *rodada);
 void jogo_release(void *jogo);
-<<<<<<< HEAD
-
-=======
-void OrdenarTabela(Time *v);
-void ImprimirTabela(Campeonato *c);
-void ImprimirTime(Campeonato *c, char *ntime);
-void ImprimirArtilheiro(Campeonato *c);
-void OrdenarArtilheiros(Time *v,int tamanho);
->>>>>>> FETCH_HEAD
-void registraJogo(Campeonato *c);
-void geraResultadoCampeonato(Campeonato *c);
-void geraResultadoRodada(Campeonato *c,int rodada);
-void geraResultadosJogo(Campeonato *c);
-<<<<<<< HEAD
-
-Time * encontraTime(Campeonato *c, char *nome);
-=======
->>>>>>> FETCH_HEAD
 
 
 #endif // CAMPEONATO_H_INCLUDED
