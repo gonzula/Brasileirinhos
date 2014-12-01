@@ -1,0 +1,4194 @@
+{
+    "rodadas": [
+        {
+            "ja foi rodada": false, 
+            "numero": 1, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Gr\u00eamio"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 2, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Crici\u00fama"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 3, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Gr\u00eamio"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 4, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Sport"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 5, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Gr\u00eamio"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 6, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Bahia"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 7, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Crici\u00fama"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 8, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Internacional"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 9, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Fluminense"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 10, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Coritiba"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 11, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Corinthians"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 12, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Internacional"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 13, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Chapecoense"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 14, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Crici\u00fama"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 15, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Sport"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 16, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Vit\u00f3ria"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 17, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Gr\u00eamio"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 18, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Chapecoense"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 19, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Sport"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 20, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 21, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 22, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Bahia"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 23, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Internacional"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 24, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Crici\u00fama"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 25, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Figueirense"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 26, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Bahia", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Internacional"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 27, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Botafogo"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 28, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Coritiba"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 29, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "S\u00e3o Paulo"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 30, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Cruzeiro"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Fluminense"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 31, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Fluminense"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 32, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Goi\u00e1s", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Fluminense"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 33, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Cruzeiro"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 34, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Bahia"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 35, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Chapecoense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Crici\u00fama", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "S\u00e3o Paulo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Palmeiras"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Coritiba"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 36, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Atl\u00e9tico-MG"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Gr\u00eamio", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-PR", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Flamengo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Chapecoense"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 37, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Internacional"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Vit\u00f3ria", 
+                    "time 2": "Botafogo"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Gr\u00eamio"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Coritiba", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Sport"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Figueirense", 
+                    "time 2": "Corinthians"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Santos", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Fluminense", 
+                    "time 2": "Flamengo"
+                }
+            ]
+        }, 
+        {
+            "ja foi rodada": false, 
+            "numero": 38, 
+            "jogos": [
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Sport", 
+                    "time 2": "Goi\u00e1s"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Botafogo", 
+                    "time 2": "Vit\u00f3ria"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Corinthians", 
+                    "time 2": "Bahia"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Chapecoense", 
+                    "time 2": "Atl\u00e9tico-PR"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Atl\u00e9tico-MG", 
+                    "time 2": "Coritiba"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Internacional", 
+                    "time 2": "Figueirense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "S\u00e3o Paulo", 
+                    "time 2": "Santos"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Flamengo", 
+                    "time 2": "Fluminense"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Palmeiras", 
+                    "time 2": "Crici\u00fama"
+                }, 
+                {
+                    "gols 2": 0, 
+                    "gols 1": 0, 
+                    "ja foi jogo": false, 
+                    "time 1": "Cruzeiro", 
+                    "time 2": "Gr\u00eamio"
+                }
+            ]
+        }
+    ], 
+    "times": [
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Flavio"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Magr\u00e3o"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Saulo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Danilo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Durval"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Ewerton P\u00e1scoa "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Ferron"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Henrique Mattos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Hyago"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Igor"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Leandro Vicentin"
+                }
+            ], 
+            "nome": "Sport", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Andrey"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Helton Leite"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Jefferson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Renan"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Saulo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Alex Santos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Anderson Santos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Andr\u00e9 Bahia"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Dankler"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Guilherme"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Igor Rabello"
+                }
+            ], 
+            "nome": "Botafogo", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "C\u00e1ssio"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Danilo Fernandes"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Matheus Vidotto"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Walter"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Anderson Martins"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Fagner"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Felipe"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "F\u00e1bio Santos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Gil"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Guilherme Andrade"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Guilherme Arana"
+                }
+            ], 
+            "nome": "Corinthians", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Danilo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Gustavo "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Lauro"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Nivaldo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Silvio"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Andr\u00e9 Paulino"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Bruno "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Danny Morais"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Douglas Grolli"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Ednei"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Enrique Meza"
+                }
+            ], 
+            "nome": "Chapecoense", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Giovanni"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Uilson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Victor"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Alex Silva"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Donato"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Douglas Santos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Edcarlos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Emerson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Emerson Concei\u00e7\u00e3o"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Eron"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Gabriel"
+                }
+            ], 
+            "nome": "Atl\u00e9tico-MG", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Agenor"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Alisson Becker"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Dida"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Muriel"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Alan"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Alan Ruschel"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Artur"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Claudio Winck"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Diogo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Ernando"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Fabr\u00edcio"
+                }
+            ], 
+            "nome": "Internacional", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Denis"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Renan Ribeiro"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Rog\u00e9rio Ceni"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Ant\u00f4nio Carlos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Auro"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Edson Silva"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Luc\u00e3o"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Luis Ricardo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Michel Bastos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Paulo Miranda"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Rafael Toloi"
+                }
+            ], 
+            "nome": "S\u00e3o Paulo", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "C\u00e9sar"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Daniel"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Felipe"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Jo\u00e3o Paulo Kuspiosz"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Paulo Victor"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Anderson Pico"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Chic\u00e3o"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Erazo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Fernando Fernandes"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Frauches "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Jorge"
+                }
+            ], 
+            "nome": "Flamengo", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Bruno"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Deola"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Fabio"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Fernando Prass"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Jailson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Vin\u00edcius Silvestre"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Gabriel Dias"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Jo\u00e3o Pedro "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Juninho"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "L\u00e9o Cunha"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "L\u00facio"
+                }
+            ], 
+            "nome": "Palmeiras", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Alan"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Elisson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "F\u00e1bio"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Rafael"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Alex"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Breno"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Bruno Rodrigo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Cear\u00e1"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Ded\u00e9"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Dione"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Eg\u00eddio"
+                }
+            ], 
+            "nome": "Cruzeiro", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Edson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Harlei"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Paulo Henrique"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Renan"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Alex Alves"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Baiano"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Felipe Macedo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Felipe Saturnino"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Jackson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Lima"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "L\u00e9o Veloso"
+                }
+            ], 
+            "nome": "Goi\u00e1s", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Fernando"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Guillermo "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Gustavo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Roberto Fern\u00e1ndez"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Wilson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Ayrton"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Danilo Tarracha"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "D\u00e3o"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Ednei"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Euller "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Guilherme"
+                }
+            ], 
+            "nome": "Vit\u00f3ria", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Douglas Pires"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Guido"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Marcelo Lomba"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Omar"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Renan"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Ada\u00edlton"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Demerson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Diego Macedo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Guilherme Santos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Lucas Fonseca"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Par\u00e1"
+                }
+            ], 
+            "nome": "Bahia", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Lucas Macanhan"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Rodolfo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Santos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Weverton"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Cleberson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Dr\u00e1usio"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Gustavo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Jean Felipe"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Lucas Alves"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Lucas Olaza"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "L\u00e9o Pereira"
+                }
+            ], 
+            "nome": "Atl\u00e9tico-PR", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Samuel"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Vanderlei"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Van\u00e1"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "William Menezes"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Bonfim "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Carlinhos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Dener Assun\u00e7\u00e3o"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Ivan"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Leandro Almeida"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Luccas Claro"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Reginaldo "
+                }
+            ], 
+            "nome": "Coritiba", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Alex "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Jean"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "J\u00fanior Oliveira"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Luan Polli "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Neto"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Tiago Volpi"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Bruno Alves"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Cereceda"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Guilherme Lazaroni"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Leandro Silva"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Marquinhos"
+                }
+            ], 
+            "nome": "Figueirense", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Aranha"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Gabriel Gasparotto"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Jo\u00e3o Paulo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Vladimir"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Bruno Uvini"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Caju"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Cicinho"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Daniel Guedes "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "David Braz"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Edu Dracena"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Gustavo Henrique"
+                }
+            ], 
+            "nome": "Santos", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Diego Cavalieri"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "Felipe Garcia"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "J\u00falio C\u00e9sar"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Klever"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Marcos Felipe "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Ailton"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Breno"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Bruno"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Carlinhos"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Elivelton"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Fabr\u00edcio "
+                }
+            ], 
+            "nome": "Fluminense", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Bruno"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "David"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Edson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Luiz"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Ronaldo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Cleiton"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Eduardo"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "F\u00e1bio Ferreira"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "Giovanni"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Gualberto"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Heitor"
+                }
+            ], 
+            "nome": "Crici\u00fama", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }, 
+        {
+            "jogadores": [
+                {
+                    "gols": 0, 
+                    "numero": 1, 
+                    "nome": "Follmann "
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 2, 
+                    "nome": "L\u00e9o"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 3, 
+                    "nome": "Marcelo Grohe"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 4, 
+                    "nome": "Tiago"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 5, 
+                    "nome": "Breno"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 6, 
+                    "nome": "Bressan"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 7, 
+                    "nome": "Canavesio"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 8, 
+                    "nome": "Gabriel"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 9, 
+                    "nome": "J\u00fanior"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 10, 
+                    "nome": "Liverson"
+                }, 
+                {
+                    "gols": 0, 
+                    "numero": 11, 
+                    "nome": "Mat\u00edas Rodr\u00edguez"
+                }
+            ], 
+            "nome": "Gr\u00eamio", 
+            "der": 0, 
+            "pontos": 0, 
+            "saldo": 0, 
+            "emp": 0, 
+            "vit": 0
+        }
+    ]
+}

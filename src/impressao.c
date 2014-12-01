@@ -15,6 +15,7 @@ comparaTimes(const void * o1, const void * o2)
     Time **t2p = (Time **)o2;
     Time *t1 = *t1p;
     Time *t2 = *t2p;
+
     if (t1->pontos < t2->pontos) return 1;
     if (t1->pontos > t2->pontos) return -1;
 
@@ -34,11 +35,23 @@ ImprimirTabela(Campeonato *c)
 
     vector_sort(v, comparaTimes);//ordena o vetor
 
+    int maiorNome = 0;
     for(i=0; i < v->count; i++)
     {
         Time *t = v->objs[i];
+        int esteNome = strlen(t->nome);
+        if (esteNome > maiorNome)
+            maiorNome = esteNome;
         printf("%d - %s  %d pontos\n", i, t->nome, t->pontos);
     }
+    // for(i=0; i < v->count; i++)
+    // {
+    //     Time *t = v->objs[i];
+    //     int esteNome = strlen(t->nome);
+    //     if (esteNome > maiorNome)
+    //         maiorNome = esteNome;
+    //     printf("%d - %s  %d pontos\n", i, t->nome, t->pontos);
+    // }
 
     release(v);
 }
