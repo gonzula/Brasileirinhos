@@ -456,12 +456,12 @@ void ImprimirTime(Campeonato *c, char *ntime){ //imprime os jogadores do time, e
   Jogador *aux2;
 
   LIST_LOOP(c->times){
-  aux=node->object;
-  if(strcmp(aux->nome,ntime)==0){
-  LIST_LOOP(aux->jogadores){
-  aux2=node->object;
-  printf("%d - ",aux2->numero);
-  puts(aux2->nome);
+    aux=node->object;
+    if(strcmp(aux->nome,ntime)==0){
+      LIST_LOOP(aux->jogadores){
+        aux2=node->object;
+        printf("%d - ",aux2->numero);
+        puts(aux2->nome);
   }
   break;
   }
@@ -482,20 +482,20 @@ void ImprimirArtilheiro(Campeonato *c){ //imprimi o jogador(es) com  maior numer
   LIST_LOOP(c->times){
     aux=node->object;
     LIST_LOOP(aux->jogadores){
-    aux2=node->object;
-    if(aux2->gols>0){
-      v[i].gols=aux2->gols;
-      strcpy(v[i].nome,aux2->nome);
-      v[i].numero=aux2->numero;
-      i++;
+      aux2=node->object;
+      if(aux2->gols>0){
+        v[i].gols=aux2->gols;
+        strcpy(v[i].nome,aux2->nome);
+        v[i].numero=aux2->numero;
+        i++;
+      }
     }
-   }
- }
+  }
 
  OrdenarArtilheiros(v,i);
 
  for(cont=0;cont<i;cont++){
- printf("GOLS:%d - %s  \n",v[cont].gols,v[i].nome);
+   printf("GOLS:%d - %s  \n",v[cont].gols,v[i].nome);
  }
  return;
 }
