@@ -433,7 +433,7 @@ void ImprimirTabela(Campeonato *c){
   release(v);
 
   LIST_LOOP(c->times){ //coloca os 20 times em um vetor
-    aux = node->object;
+    aux = Node->object;
     strcpy(v[i]->nome,aux->nome);
     v[i]->pontos=aux->pontos;
     v[i]->saldo=aux->saldo;
@@ -511,7 +511,7 @@ void ImprimirArtilheiro(Campeonato *c){ //imprimi o jogador(es) com  maior numer
     i=j-1;
 
     while(i>=0&& v[i].gols>aux){
-    	strcpy(v[i+1].nome,v[i].nome);
+      strcpy(v[i+1].nome,v[i].nome);
       v[i+1].gols=v[i].gols;
       v[i+1].numero=v[i].numero;
       i--;
