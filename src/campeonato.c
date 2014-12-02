@@ -489,6 +489,11 @@ registraJogo(Campeonato *c)
         imprimeVetorJogos(jogos);
         printf("Opção: ");
         scanf("%d",&selecao);
+        if (selecao > jogos->count - 1)
+        {
+            printf("Opção Inválida\n");
+            return;
+        }
         Jogo *j = jogos->objs[selecao];
         printf("Digite o resultado da partida entre %s X %s:", j->time1->nome, j->time2->nome);
         scanf("%d %d", &gols1, &gols2);
@@ -590,11 +595,13 @@ zerarCampeonato(Campeonato *c)
     LIST_LOOP(c->rodadas)
     {
         Rodada *r = node->object;
+        r->jaFoiRodada = 0;
         LIST_LOOP(r->jogos)
         {
             Jogo *j = node->object;
             j->gols1 =
             j->gols2 = 0;
+            j->jaFoiJogo = 0;
         }
     }
 }

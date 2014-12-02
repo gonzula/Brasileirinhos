@@ -12,9 +12,11 @@
 void selecionaOpcao(int, Campeonato *);
 
 void
-menu(Campeonato *c){
+menu(Campeonato *c)
+{
     int opcao = -1;
-    while (opcao != 0){
+    while (opcao != 0)
+    {
         printf("\nEscolha a opção:\n");
         printf("1 - Registrar um jogo\n");
         printf("2 - Gerar um jogo aleatório da rodada\n");
@@ -31,8 +33,10 @@ menu(Campeonato *c){
 }
 
 void
-selecionaOpcao(int opcao, Campeonato *c){
-    switch(opcao){
+selecionaOpcao(int opcao, Campeonato *c)
+{
+    switch(opcao)
+    {
         case 1:
             registraJogo(c);
             break;
@@ -53,6 +57,11 @@ selecionaOpcao(int opcao, Campeonato *c){
             break;
         case 7:
             zerarCampeonato(c);
+            break;
+        case 0:
+            break;
+        default:
+            printf("Opção inválida\n");
             break;
     }
 }
