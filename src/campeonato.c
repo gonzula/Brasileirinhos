@@ -408,6 +408,7 @@ adicionaGolsJogadores(Time *t)
     Vector * jogadores = vector_from_list(t->jogadores);
     Jogador *j = jogadores->objs[i];
     j->gols++;
+    printf("%s\n",j->nome);
     release(jogadores);
 }
 
@@ -453,11 +454,15 @@ void alteraCampeonato(Campeonato *c, Jogo *j)
     }
     time1->saldo += g1 - g2;
     time2->saldo += g2 - g1;
+    if(g1 > 0)
+        printf("\nJogadores que fizeram gols do time do %s:\n",time1->nome);
     while(g1 > 0)
     {
         adicionaGolsJogadores(time1);
         g1--;
     }
+    if(g2 > 0)
+        printf("\nJogadores que fizeram gols do time do %s:\n",time2->nome);
     while(g2 > 0)
     {
         adicionaGolsJogadores(time2);
@@ -518,10 +523,12 @@ void geraResultadoRodada(Campeonato *c)
                 gols2 =  rand() % 7;
                 j->gols1 = gols1;
                 j->gols2 = gols2;
+                printf("Resultados do jogo entre %s X %s: %d a %d (Rodada:%d) \n",j->time1->nome,j->time2->nome,gols1,gols2,rodadaAt->numero);
                 alteraCampeonato(c, j);
                 j->jaFoiJogo = 1;
             }
         }
+        rodadaAt->jaFoiRodada = 1;
         release(jogos);
     }
 }
@@ -546,6 +553,7 @@ geraResultadosJogo(Campeonato *c)
         Jogo *j = jogos->objs[selecao];
         j->gols1 = gols1;
         j->gols2 = gols2;
+        printf("Resultados do jogo entre %s X %s: %d a %d \n",j->time1->nome,j->time2->nome,gols1,gols2);
         alteraCampeonato(c, j);
         j->jaFoiJogo = 1;
         release(jogos);

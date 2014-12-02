@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+#include <conio.h>
 #include <time.h>
 
 #include "structures/structures.h"
@@ -16,14 +16,14 @@ void
 menu(Campeonato *c){
     int opcao = -1;
     while (opcao != 0){
-        printf("Escolha a opção:\n");
+        printf("\nEscolha a opção:\n");
         printf("1 - Registrar um jogo\n");
         printf("2 - Gerar um jogo aleatório da rodada\n");
         printf("3 - Gerar uma rodada\n");
         printf("4 - Gerar o campeonato\n");
         printf("5 - Imprime tabela do campeonato\n");
         printf("6 - Imprime artilheiros\n");
-        printf("0 - Sair\n");
+        printf("0 - Salvar e Sair\n");
         printf("Opção: ");
         scanf("%d",&opcao);
         selecionaOpcao(opcao,c);
@@ -33,6 +33,7 @@ menu(Campeonato *c){
 void
 selecionaOpcao(int opcao, Campeonato *c){
     int rodada;
+    system("cls");
     switch(opcao){
         case 1:
             registraJogo(c);
