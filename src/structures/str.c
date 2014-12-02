@@ -13,7 +13,8 @@
 
 void str_free(void *obj);
 
-String * str_init()
+String *
+str_init()
 {
     String *str = alloc(sizeof(String), str_free);
     str->string = malloc(sizeof(char) * BUFFER_SIZE);
@@ -24,7 +25,8 @@ String * str_init()
 }
 
 
-String * str_create(const char * original)
+String *
+str_create(const char * original)
 {
     String *str = alloc(sizeof(String), str_free);
     str->len = strlen(original);
@@ -34,7 +36,66 @@ String * str_create(const char * original)
     return str;
 }
 
-String * str_escape_cstring(char * string)
+void
+str_center(String *str, int size) //   " asd  "
+{
+    int unicodeLen = str_unicode_len(str);
+    int space_amnt = size - unicodeLen;
+    if (space_amnt <= 0) return;
+
+    int newSize = space_amnt + str->len;
+    char *newString = malloc(sizeof(char) * (newSize + 1));
+    int firstGap = space_amnt/2;
+
+
+    for (int i = 0; i < space_amnt + str->len; i++)
+    {
+        if (i < firstGap)
+        {
+            newString[i] = ' ';
+            continue;
+        }
+        int originalPos = i - firstGap;
+        if (originalPos < str->len)
+            newString[i] = str->string[originalPos];
+        else
+            newString[i] = ' ';
+    }
+    free(str->string);
+    str->string = newString;
+    str->len = newSize;
+    str->bufferSize = newSize + 1;
+
+    newString[newSize] = 0;
+}
+
+int
+str_unicode_len(String *str)
+{
+    int unicodeLen = 0;
+    int toFinishSequence = 0;
+    for (int i = 0; i < str->len; i++)
+    {
+        unsigned char c = str->ustring[i];
+        if (toFinishSequence)
+        {
+            toFinishSequence--;
+            continue;
+        }
+        unicodeLen++;
+        if (c > 128)
+        {
+            bin8 b;
+            b.uc = c;
+            toFinishSequence = (b.b7?1:0) + (b.b6?1:0) + (b.b5?1:0);
+            toFinishSequence -= 1;
+        }
+    }
+    return unicodeLen;
+}
+
+String *
+str_escape_cstring(char * string)
 {
     String *esc = str_init();
     unsigned char utfSeq[4];
@@ -162,13 +223,15 @@ String * str_escape_cstring(char * string)
     return esc;
 }
 
-String * str_escape(String *str)
+String *
+str_escape(String *str)
 {
     return str_escape_cstring(str->string);
 }
 
 
-void str_append(String *str, const char * toAppend)
+void
+str_append(String *str, const char * toAppend)
 {
     size_t appLen = strlen(toAppend);
     if (str->len + appLen + 1 > str->bufferSize)
@@ -181,7 +244,8 @@ void str_append(String *str, const char * toAppend)
     str->len += appLen;
 }
 
-void str_append_char(String *str, const unsigned char c)
+void
+str_append_char(String *str, const unsigned char c)
 {
     size_t appLen = 1;
     if (str->len + appLen + 1 > str->bufferSize)
@@ -194,7 +258,8 @@ void str_append_char(String *str, const unsigned char c)
     str->len += appLen;
 }
 
-void str_free(void *obj)
+void
+str_free(void *obj)
 {
     String *str = (String *) obj;
     free(str->string);

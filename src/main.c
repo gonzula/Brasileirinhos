@@ -65,5 +65,6 @@ main(int argc, const char * argv[])
     menu(champ);
     campeonato_write_to_file("brasileirao.json", champ);
     release(champ);
+
     return EXIT_SUCCESS;
 }

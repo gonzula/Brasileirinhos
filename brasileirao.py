@@ -36,8 +36,8 @@ for nome, info, url in zip(nomes, infos, times_urls):
     jogadores_lst = re.findall(re.compile(re_pattern, re.UNICODE), time_request.text)
     jogadores = []
     for idx, nome_jogador in enumerate(jogadores_lst, 1):
-        if idx > 11:
-            break
+        # if idx > 11:
+        #     break
         jogador = {}
         jogador['nome'] = nome_jogador
         jogador['numero'] = idx
