@@ -4,7 +4,7 @@ CFLAGS= -std=c11 -Wall
 
 all: brasileirinhos.app
 
-brasileirinhos.app: impressao.o structures.o vector.o list.o refcnt.o str.o htable.o serializable.o main.o binary_file.o file_manager.o campeonato.o
+brasileirinhos.app: jsonFormatter.o impressao.o structures.o vector.o list.o refcnt.o str.o htable.o serializable.o main.o binary_file.o file_manager.o campeonato.o
 	$(CC) $(CFLAGS) *.o -o brasileirinhos.app
 
 campeonato.o: src/campeonato.c
@@ -25,8 +25,8 @@ htable.o: src/structures/htable.c
 refcnt.o: src/structures/refcnt.c
 	$(CC) $(CFLAGS) -c src/structures/refcnt.c
 
-str.o: src/structures/str.c
-	$(CC) $(CFLAGS) -c src/structures/str.c
+src.o: src/structures/src.c
+	$(CC) $(CFLAGS) -c src/structures/src.c
 
 serializable.o: src/structures/serializable.c
 	$(CC) $(CFLAGS) -c src/structures/serializable.c
@@ -39,6 +39,9 @@ vector.o: src/structures/vector.c
 
 structures.o: src/structures/structures.c
 	$(CC) $(CFLAGS) -c src/structures/structures.c
+
+jsonFormatter.o: src/structures/jsonFormatter.c
+	$(CC) $(CFLAGS) -c src/structures/jsonFormatter.c
 
 main.o: src/main.c
 	$(CC) $(CFLAGS) -c src/main.c

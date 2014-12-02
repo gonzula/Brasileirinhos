@@ -209,11 +209,18 @@ campeonato_write_to_file(char *filename, Campeonato *champ)
     String *json = serializable_write_json(campeonato_s);
     release(campeonato_s);
 
-    file_manager *fm = construct_file_manager(filename);
+    file_manager *fm = construct_file_manager("temp");
     write_bytes(fm, json->string);
 
     release(json);
     destroy_file_manager(fm);
+
+
+    FILE *outF = fopen(filename, "wb");
+    FILE *inF = fopen("temp", "rb");
+    formatJson(inF, outF, "    ", 0);
+    fclose(outF);
+    fclose(inF);
 
 }
 
