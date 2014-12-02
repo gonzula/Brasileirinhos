@@ -185,6 +185,22 @@ ImprimirArtilheiro(Campeonato *c) //imprimi o jogador(es) com  maior numero de g
     }
 
     String *saida = str_init();
+    String *separador;
+    {
+        separador  = str_init();
+        str_append(separador, "+----+--");
+        for (int i = 0; i < maiorJogador; i++)
+        {
+            str_append_char(separador, '-');
+        }
+        str_append(separador, "+--");
+        for (int i = 0; i < maiorTime; i++)
+        {
+            str_append_char(separador, '-');
+        }
+        str_append(separador, "+---+\n");
+        str_append(saida, separador->string);
+    }
     {
         char linha[100];
         String *j = str_create("Jogador");
@@ -194,22 +210,8 @@ ImprimirArtilheiro(Campeonato *c) //imprimi o jogador(es) com  maior numero de g
         sprintf(linha, "|  # |%s|%s| G |\n", j->string, t->string);
         str_append(saida, linha);
     }
-    {
-        String *separador  = str_init();
-        str_append(separador, "|----|--");
-        for (int i = 0; i < maiorJogador; i++)
-        {
-            str_append_char(separador, '-');
-        }
-        str_append(separador, "|--");
-        for (int i = 0; i < maiorTime; i++)
-        {
-            str_append_char(separador, '-');
-        }
-        str_append(separador, "|---|\n");
-        str_append(saida, separador->string);
-    }
-    for(int i = 0; i < artilheiros->count; i++)
+    str_append(saida, separador->string);
+    for(int i = 0; i < artilheiros->count && i < 20; i++)
     {
         Jogador *j = artilheiros->objs[i];
         char linha[100];
@@ -227,6 +229,7 @@ ImprimirArtilheiro(Campeonato *c) //imprimi o jogador(es) com  maior numero de g
         release(nome);
         release(tNome);
     }
+    str_append(saida, separador->string);
     puts(saida->string);
     release(saida);
     release(artilheiros);

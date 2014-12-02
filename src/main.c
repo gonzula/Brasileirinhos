@@ -41,9 +41,7 @@ selecionaOpcao(int opcao, Campeonato *c){
             geraResultadosJogo(c);
             break;
         case 3:
-            printf("Digite a rodada escolhida para ser gerada:");
-            scanf("%d",&rodada);
-            geraResultadoRodada(c,rodada);
+            geraResultadoRodada(c);
             break;
         case 4:
             geraResultadoCampeonato(c);

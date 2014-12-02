@@ -4,6 +4,7 @@ import requests
 import json
 import re
 import random
+from sys import stderr
 
 base_url = "http://globoesporte.globo.com/futebol/brasileirao-serie-a/"
 base_req = requests.get(base_url)
@@ -35,9 +36,8 @@ for nome, info, url in zip(nomes, infos, times_urls):
     re_pattern = r'<span class="ge-card-elenco-jogador-nome">([\w\s]+)</span>'
     jogadores_lst = re.findall(re.compile(re_pattern, re.UNICODE), time_request.text)
     jogadores = []
+    print >> stderr, "pegando jogadores do", nome
     for idx, nome_jogador in enumerate(jogadores_lst, 1):
-        # if idx > 11:
-        #     break
         jogador = {}
         jogador['nome'] = nome_jogador
         jogador['numero'] = idx

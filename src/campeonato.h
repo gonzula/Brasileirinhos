@@ -41,7 +41,7 @@ void jogo_release(void *jogo);
 
 void registraJogo(Campeonato *c);
 void geraResultadoCampeonato(Campeonato *c);
-void geraResultadoRodada(Campeonato *c,int rodada);
+void geraResultadoRodada(Campeonato *c);
 void geraResultadosJogo(Campeonato *c);
 
 Time * encontraTime(Campeonato *c, char *nome);

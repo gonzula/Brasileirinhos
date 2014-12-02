@@ -496,9 +496,9 @@ registraJogo(Campeonato *c)
     verificaAcabouRodada(rodadaAt);
 }
 
-void geraResultadoRodada(Campeonato *c,int rodada)
+void geraResultadoRodada(Campeonato *c)
 {
-    Rodada *rodadaAt = encontraRodada(c,rodada);
+    Rodada *rodadaAt = rodadaAtual(c);
     if (rodadaAt == NULL || rodadaAt->jaFoiRodada)
     {
         printf("Ja foram todas as rodadas do campeonato.");
@@ -530,7 +530,8 @@ void
 geraResultadosJogo(Campeonato *c)
 {
     Rodada *rodadaAt = rodadaAtual(c);
-    if (rodadaAt == NULL){
+    if (rodadaAt == NULL)
+    {
         printf("O campeonato acabou\n");
         return;
     }
@@ -556,10 +557,6 @@ geraResultadosJogo(Campeonato *c)
 void
 geraResultadoCampeonato(Campeonato *c)
 {
-    LIST_LOOP(c->rodadas)
-    {
-        Rodada *r = node->object;
-        if(!r->jaFoiRodada)
-            geraResultadoRodada(c,r->numero);
-    }
+    while(rodadaAtual(c))
+        geraResultadoRodada(c);
 }
