@@ -43,6 +43,7 @@ void registraJogo(Campeonato *c);
 void geraResultadoCampeonato(Campeonato *c);
 void geraResultadoRodada(Campeonato *c);
 void geraResultadosJogo(Campeonato *c);
+void zerarCampeonato(Campeonato *c);
 
 Time * encontraTime(Campeonato *c, char *nome);
 

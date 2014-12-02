@@ -568,3 +568,33 @@ geraResultadoCampeonato(Campeonato *c)
     while(rodadaAtual(c))
         geraResultadoRodada(c);
 }
+
+
+void
+zerarCampeonato(Campeonato *c)
+{
+    LIST_LOOP(c->times)
+    {
+        Time *t = node->object;//pontos,saldo,vit,emp,der
+        t->pontos =
+        t->saldo =
+        t->vit =
+        t->emp =
+        t->der = 0;
+        LIST_LOOP(t->jogadores)
+        {
+            Jogador *j = node->object;
+            j->gols = 0;
+        }
+    }
+    LIST_LOOP(c->rodadas)
+    {
+        Rodada *r = node->object;
+        LIST_LOOP(r->jogos)
+        {
+            Jogo *j = node->object;
+            j->gols1 =
+            j->gols2 = 0;
+        }
+    }
+}

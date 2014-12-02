@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <conio.h>
 #include <time.h>
 
 #include "structures/structures.h"
@@ -23,6 +22,7 @@ menu(Campeonato *c){
         printf("4 - Gerar o campeonato\n");
         printf("5 - Imprime tabela do campeonato\n");
         printf("6 - Imprime artilheiros\n");
+        printf("7 - Zera Campeonato\n");
         printf("0 - Salvar e Sair\n");
         printf("Opção: ");
         scanf("%d",&opcao);
@@ -32,8 +32,6 @@ menu(Campeonato *c){
 
 void
 selecionaOpcao(int opcao, Campeonato *c){
-    int rodada;
-    system("cls");
     switch(opcao){
         case 1:
             registraJogo(c);
@@ -52,6 +50,9 @@ selecionaOpcao(int opcao, Campeonato *c){
             break;
         case 6:
             ImprimirArtilheiro(c);
+            break;
+        case 7:
+            zerarCampeonato(c);
             break;
     }
 }
