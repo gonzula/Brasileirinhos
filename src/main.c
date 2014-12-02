@@ -35,6 +35,7 @@ menu(Campeonato *c)
 void
 selecionaOpcao(int opcao, Campeonato *c)
 {
+    system("cls");
     switch(opcao)
     {
         case 1:
