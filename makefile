@@ -25,8 +25,8 @@ htable.o: src/structures/htable.c
 refcnt.o: src/structures/refcnt.c
 	$(CC) $(CFLAGS) -c src/structures/refcnt.c
 
-src.o: src/structures/src.c
-	$(CC) $(CFLAGS) -c src/structures/src.c
+str.o: src/structures/str.c
+	$(CC) $(CFLAGS) -c src/structures/str.c
 
 serializable.o: src/structures/serializable.c
 	$(CC) $(CFLAGS) -c src/structures/serializable.c
