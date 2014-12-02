@@ -1,3 +1,14 @@
+/*
+** Grupo 7
+** Carlos Eduardo Ayoub Fialho - 7563703
+** Gabriel Campos Cristiano - 8937138
+** João Gustavo Cabral de Marins - 7563982
+** João Renato Zanetti de Lima - 8656243
+** José Eduardo da Silva Teixeira Junior - 9165605
+** Leonardo Ventura - 8937211
+*/
+
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -35,7 +46,11 @@ menu(Campeonato *c)
 void
 selecionaOpcao(int opcao, Campeonato *c)
 {
+#ifdef _WIN32
     system("cls");
+#else
+    system("clear");
+#endif
     switch(opcao)
     {
         case 1:
