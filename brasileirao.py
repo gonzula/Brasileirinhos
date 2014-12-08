@@ -36,7 +36,7 @@ for nome, info, url in zip(nomes, infos, times_urls):
     re_pattern = r'<span class="ge-card-elenco-jogador-nome">([\w\s]+)</span>'
     jogadores_lst = re.findall(re.compile(re_pattern, re.UNICODE), time_request.text)
     jogadores = []
-    print >> stderr, "pegando jogadores do", nome
+    print >> stderr, "pegando jogadores do", nome.encode('utf-8')
     for idx, nome_jogador in enumerate(jogadores_lst, 1):
         jogador = {}
         jogador['nome'] = nome_jogador

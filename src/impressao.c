@@ -209,6 +209,8 @@ ImprimirArtilheiro(Campeonato *c) //imprimi o jogador(es) com  maior numero de g
         str_center(t, maiorTime + 2);
         sprintf(linha, "|  # |%s|%s| G |\n", j->string, t->string);
         str_append(saida, linha);
+        release(j);
+        release(t);
     }
     str_append(saida, separador->string);
     for(int i = 0; i < artilheiros->count && i < 20; i++)
@@ -231,6 +233,7 @@ ImprimirArtilheiro(Campeonato *c) //imprimi o jogador(es) com  maior numero de g
     }
     str_append(saida, separador->string);
     puts(saida->string);
+    release(separador);
     release(saida);
     release(artilheiros);
 }
