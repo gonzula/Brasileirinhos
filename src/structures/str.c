@@ -109,33 +109,15 @@ str_escape_cstring(char * string)
         {
             switch (c)
             {
-                case '\"':
-                    str_append(esc, "\\\"");
-                    break;
-                case '\n':
-                    str_append(esc, "\\n");
-                    break;
-                case '\r':
-                    str_append(esc, "\\r");
-                    break;
-                case '\t':
-                    str_append(esc, "\\t");
-                    break;
-                case '\b':
-                    str_append(esc, "\\b");
-                    break;
-                case '\f':
-                    str_append(esc, "\\f");
-                    break;
-                case '\\':
-                    str_append(esc, "\\\\");
-                    break;
-               case '/':
-                    str_append(esc, "\\/");
-                    break;
-                default:
-                    str_append_char(esc, c);
-                    break;
+                case '\"': str_append(esc, "\\\""); break;
+                case '\n': str_append(esc, "\\n");  break;
+                case '\r': str_append(esc, "\\r");  break;
+                case '\t': str_append(esc, "\\t");  break;
+                case '\b': str_append(esc, "\\b");  break;
+                case '\f': str_append(esc, "\\f");  break;
+                case '\\': str_append(esc, "\\\\"); break;
+                case '/':  str_append(esc, "\\/");  break;
+                default:   str_append_char(esc, c); break;
             }
         }
         else
